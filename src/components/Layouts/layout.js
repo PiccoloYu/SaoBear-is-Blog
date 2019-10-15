@@ -24,7 +24,7 @@ import Loadable from 'react-loadable';//解决 wondos 未定义
 
 import "./index.scss";
 import 'antd/dist/antd.css';
-import 'prismjs/themes/prism-COY.css';
+//import 'prismjs/themes/prism-COY.css';
 import 'animate.css';
 import { ContextProviderComponent } from "../../utils/Context";
 
