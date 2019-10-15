@@ -43,7 +43,7 @@ class Label extends Component {
 
 export default  Label;
 
-export const pageQuery = graphql`
+export const tagQuery = graphql`
   query labelPageQuery {
     site {
       siteMetadata {

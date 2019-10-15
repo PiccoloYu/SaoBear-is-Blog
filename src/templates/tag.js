@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { graphql, Link } from "gatsby";
+import { graphql } from "gatsby";
 import Articlelist from "../components/Articlelist";
 class tag extends Component {
 
@@ -16,7 +16,7 @@ class tag extends Component {
 
 export default tag;
 
-export const pageQuery = graphql`
+export const tagQuery = graphql`
   query tagPageQuery($tag: [String!]) {
     site {
       siteMetadata {

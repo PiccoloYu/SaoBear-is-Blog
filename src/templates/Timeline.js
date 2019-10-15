@@ -119,7 +119,7 @@ export default connect(
   { isArticle }
 )(Timeline);
 
-export const pageQuery = graphql`
+export const timepageQuery = graphql`
   query timePageQuery($tskip: Int!, $tlimit: Int!)  {
     allMarkdownRemark(
       sort: { fields: [frontmatter___date], order: DESC }
