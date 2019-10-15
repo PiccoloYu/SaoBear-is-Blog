@@ -9,7 +9,7 @@ class Label extends Component {
     let Labellist = []
     for (let i = 0; i < posts.length; i++) {
       let item = {
-        label: posts[i].node.frontmatter.label,
+        label: posts[i].node.frontmatter.tag,
         title: posts[i].node.frontmatter.title
       }
       Labellist.push(item)
@@ -63,7 +63,7 @@ export const pageQuery = graphql`
             date(formatString: "YYYY-MM-DD")
             title
             description
-            label
+            tag
           }
         }
       }

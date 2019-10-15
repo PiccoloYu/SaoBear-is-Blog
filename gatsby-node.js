@@ -25,7 +25,7 @@ exports.createPages = ({ graphql, actions }) => {
               }
               frontmatter {
                 title
-                label
+                tag
               }
             }
           }
@@ -47,11 +47,11 @@ exports.createPages = ({ graphql, actions }) => {
       const previous = index === posts.length - 1 ? null : posts[index + 1].node
       const next = index === 0 ? null : posts[index - 1].node
 
-      const { label } = post.node.frontmatter;
+      const { tag } = post.node.frontmatter;
 
       // 讀取標籤
-      if (label) {
-        tagSet.add(label)
+      if (tag) {
+        tagSet.add(tag)
       }
 
       createPage({

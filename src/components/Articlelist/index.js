@@ -18,7 +18,7 @@ let Articlelist = ({ obj }) => {
               <div className={`content content-wrap ${(index + 1) % 2 === 0 ? '' : ''}`}>
                 <div className="content-wrap-main">
                   <header>
-                    <MyTag label={node.frontmatter.label} date={`发布于 ` + node.frontmatter.date} className='mytag' />
+                    <MyTag label={node.frontmatter.tag} date={`发布于 ` + node.frontmatter.date} className='mytag' />
                   </header>
                   <section className="article_section">
                     <h4

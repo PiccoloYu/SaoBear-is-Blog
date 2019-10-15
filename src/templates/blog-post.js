@@ -83,7 +83,7 @@ class BlogPostTemplate extends React.Component {
               }}
             >
               <MyTag
-                label={post.frontmatter.label} date={post.frontmatter.date} className='mytag' />
+                label={post.frontmatter.tag} date={post.frontmatter.date} className='mytag' />
             </span>
           </header>
 
@@ -132,7 +132,7 @@ export const pageQuery = graphql`
         title
         date(formatString: "YYYY-MM-DD")
         description
-        label
+        tag
       }
     }
   }

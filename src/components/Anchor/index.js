@@ -22,7 +22,6 @@ let Anchor = ({ pathname }) => {
               date(formatString: "YYYY-MM-DD")
               title
               description
-              label
             }
           }
         }

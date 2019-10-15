@@ -25,7 +25,7 @@ export const pageQuery = graphql`
     }
     allMarkdownRemark(
       sort: { fields: [frontmatter___date], order: DESC }
-      filter: { frontmatter: { label: { in: $tag } } }
+      filter: { frontmatter: { tag: { in: $tag } } }
     ) {
       edges {
         node {
@@ -37,7 +37,7 @@ export const pageQuery = graphql`
             date(formatString: "YYYY-MM-DD")
             title
             description
-            label
+            tag
           }
         }
       }
