@@ -121,6 +121,7 @@ class Layout extends React.Component {
     const { headerhide, screenTop, scrollTop, scrollw } = this.state;
     const rootPath = `${__PATH_PREFIX__}/`;
     const lost = location.pathname.split("/");
+    console.log(location.pathname)
     return (
       <Provider store={store}>
         <ContextProviderComponent>
