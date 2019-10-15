@@ -1,0 +1,72 @@
+.game {
+  z-index: 1;
+  position: absolute;
+  margin: 0 auto;
+  left: 0;
+  top: -200px;
+  right: 0;
+  //height: 200px;
+}
+
+#offline-resources {
+  display: none;
+}
+
+#main-frame-error {
+  // background: #f4f4f4;
+  height: 345px;
+}
+
+.runner-container {
+  height: 150px;
+  overflow: hidden;
+  position: relative;
+  z-index: 2;
+  margin: 0 auto;
+  padding-bottom: 15px;
+  //border: 1px solid #000;
+  // background: #f4f4f4;
+}
+
+
+.runner-containerF{
+  border-radius: 15px;
+  //box-shadow: 0 5px 20px 0 rgba(0,0,0,.2), 0 10px 20px -12px rgba(0,0,0,.5) !important;
+}
+.controller {
+  background: rgba(247, 247, 247, .1);
+  height: 100vh;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100vw;
+  z-index: 1;
+}
+
+#options {
+  position: relative;
+  //left: 50px;
+  //display: flex;
+  align-items: center;
+  z-index: 5;
+  display: none;
+}
+
+#options>span {
+  margin-left: 10px;
+  margin-right: 50px;
+}
+
+#botStatus {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+#buttons {
+  position: absolute;
+  top: 250px;
+  right: 50px;
+  display: flex;
+  align-items: center;
+}

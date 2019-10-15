@@ -1,0 +1,56 @@
+.header {
+  width: 100%;
+  background-color: #fff;
+  height: 3.75rem;
+  line-height: 3.75rem;
+  color: #000;
+  z-index: 99;
+  position: fixed;
+  box-shadow: 0 1px 40px -8px rgba(0, 0, 0, 0.5);
+  left: 0;
+  top: 0px;
+}
+.ant-input-affix-wrapper .ant-input-suffix {
+  left: 10px !important;
+  right: unset !important;
+}
+.ant-input-affix-wrapper .ant-input:not(:last-child) {
+  padding-left: 30px;
+  padding-right: unset;
+}
+.ant-input-suffix {
+  font-size: 18px;
+  font-weight: 700;
+}
+.ant-input {
+  border-radius: 15px !important;
+}
+.menuset {
+  height: 100%;
+  width: 50%;
+  float: right;
+}
+.ant-menu-horizontal {
+  width: 70%;
+  float: left;
+}
+.ant-menu-item a {
+  box-shadow: unset;
+}
+.nav {
+  height: 3.75rem;
+  line-height: 3.75rem !important;
+  width: 100%;
+}
+.nav.ant-menu-horizontal > .ant-menu-item-selected {
+  border-top: 2px solid #1DA57A !important;
+  border-bottom: 2px solid transparent;
+}
+.nav.ant-menu-horizontal > .ant-menu-item {
+  border-top: 2px solid rgba(0, 0, 0, 0);
+  border-bottom: 2px solid transparent;
+}
+.nav.ant-menu-horizontal > .ant-menu-item:hover {
+  border-top: 2px solid #1DA57A;
+  border-bottom: 2px solid transparent;
+}

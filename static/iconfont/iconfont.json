@@ -1,0 +1,37 @@
+{
+  "id": "1445981",
+  "name": "播放qi",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "4830395",
+      "name": "停止暂停2",
+      "font_class": "tingzhizanting",
+      "unicode": "e61a",
+      "unicode_decimal": 58906
+    },
+    {
+      "icon_id": "4830396",
+      "name": "上一个2",
+      "font_class": "shangyige",
+      "unicode": "e61b",
+      "unicode_decimal": 58907
+    },
+    {
+      "icon_id": "4830397",
+      "name": "播放2",
+      "font_class": "bofang",
+      "unicode": "e61c",
+      "unicode_decimal": 58908
+    },
+    {
+      "icon_id": "4830398",
+      "name": "下一个2",
+      "font_class": "xiayige",
+      "unicode": "e61d",
+      "unicode_decimal": 58909
+    }
+  ]
+}

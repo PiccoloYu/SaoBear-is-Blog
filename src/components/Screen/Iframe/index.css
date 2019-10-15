@@ -1,0 +1,16 @@
+.Iframe {
+  width: 100%;
+  height: 100%;
+}
+.Iframe-main {
+  width: 100%;
+  height: 100%;
+}
+.Iframe-main > iframe {
+  width: 100%;
+  height: 100%;
+  border-width: 0px;
+  border-style: unset;
+  border-color: unset;
+  border-image: unset;
+}
