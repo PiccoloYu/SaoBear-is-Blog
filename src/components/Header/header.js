@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
-import { Input } from 'antd';
-import { Home, Archive, Message, About,Label } from "../../utils/Svgicons";
+import React, {/* useState */ } from 'react';
+//import { Input } from 'antd';
+import { Home, Archive, Message, About, Label } from "../../utils/Svgicons";
 //import { Link } from 'react-router-dom';
 import { Link } from "gatsby";
 import './index.scss'
@@ -9,7 +9,7 @@ import './index.scss'
 //const { Search } = Input;
 
 function Header({ headerhide, location }) {
-  const [current, setCurrent] = useState('mail');
+  //const [current, setCurrent] = useState('mail');
   const rootPath = `${__PATH_PREFIX__}/`;
 
   let class1 = {
@@ -22,9 +22,9 @@ function Header({ headerhide, location }) {
     boxShadow: `${headerhide ? '0 1px 40px -8px rgba(0, 0, 0, .5)' : '0 1px 10px -2px rgba(0, 0, 0, .5)'}`,
   }
 
-  let handleClick = e => {
-    setCurrent(e.key)
-  };
+  /* let handleClick = e => {
+     setCurrent(e.key)
+   };*/
 
 
   return (
@@ -47,7 +47,7 @@ function Header({ headerhide, location }) {
                 </Link>
             </li>
             <li>
-              <Link to="/Label" className="hvr-underline-from-center">
+              <Link to="/Labellist" className="hvr-underline-from-center">
                 <Label />
                 标签
                 </Link>
