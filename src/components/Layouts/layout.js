@@ -126,7 +126,7 @@ class Layout extends React.Component {
           <div
             className="layout"
           >
-            {test ? '' : <Focusinfo screenTop={screenTop} />}
+            {test ? <Focusinfo screenTop={screenTop} /> : ''}
             {<LoadableComponent />}
             {<Header headerhide={headerhide} location={location} scrollw={scrollw} />}
             <ScreenMain test={test} location={location} title={title} url={lost[1]} />
