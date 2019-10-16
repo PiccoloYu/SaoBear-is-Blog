@@ -9,7 +9,6 @@ class Main extends Component {
 
   render() {
     const { test, location, url, children } = this.props;
-    console.log(test)
     return (
       <main className={`main ${test ? 'main_sreen' : (url === 'Article' ? 'main_img' : 'main_none')}`}
         id="main"
