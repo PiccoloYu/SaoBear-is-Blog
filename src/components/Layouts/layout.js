@@ -7,8 +7,8 @@ import { createStore } from 'redux'
 import todoApp from '../../Redux/reducer';
 //import Aplayer from "../Aplayer";
 
-import Screen from "../Screen";
 import Main from "../Main";
+import ScreenMain from "../ScreenMain";
 //import Impress from '../impress/impress';
 import Header from "../Header/header";
 
@@ -29,11 +29,11 @@ let store = createStore(todoApp);
 
 const loader = () => (<div>Loading...</div>)
 
-/*const LoadableComponent = Loadable({
+const LoadableComponent = Loadable({
   loader: () => import('../Aplayer'),
   loading: loader,
   delay: 1000
-});*/
+});
 
 class Layout extends React.Component {
   constructor(props) {
@@ -119,7 +119,7 @@ class Layout extends React.Component {
     const { headerhide, screenTop, scrollTop, scrollw } = this.state;
     const rootPath = `${__PATH_PREFIX__}/`;
     const lost = location.pathname.split("/");
-    let test = location.pathname === rootPath;
+    const test = location.pathname === rootPath;
     return (
       <Provider store={store}>
         <ContextProviderComponent>
@@ -130,22 +130,7 @@ class Layout extends React.Component {
             {/*<LoadableComponent />*/}
             <Header headerhide={headerhide} location={location} scrollw={scrollw} />
             <Main test={test} url={lost[1]} location={location} children={children} />
-            <div className="screen animated slideInDown"
-              style={{
-                height: `${test ? '97vh' : '0'}`,//25rem
-                position: `${test ? 'fixed' : 'relative'}`,
-              }}
-            >
-              {test ?//<Screen location={location} title={title} />
-                <Screen location={location} title={title} /> :
-                lost[1] === 'Article' ?
-                  <div className="imgDiv animated slideInDown"
-                    title={title}
-                  >
-                    <img src='/imgs/AK-04.jpg' className="animated slideInDown" alt="title"></img>
-                  </div> : ''
-              }
-            </div>
+            <ScreenMain test={test} location={location} title={title} url={lost[1]}/>
             <Backtop scrollTop={scrollTop} />
             <Footer />
           </div>
