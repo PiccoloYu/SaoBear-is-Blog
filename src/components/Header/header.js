@@ -3,12 +3,13 @@ import React, {/* useState */ } from 'react';
 import { Home, Archive, Message, About, Label } from "../../utils/Svgicons";
 //import { Link } from 'react-router-dom';
 import { Link } from "gatsby";
+import Progress from "../Progress";
 import './index.scss'
 
 //const { SubMenu } = Menu;
 //const { Search } = Input;
 
-function Header({ headerhide, location }) {
+function Header({ headerhide, location, scrollw }) {
   //const [current, setCurrent] = useState('mail');
   const rootPath = `${__PATH_PREFIX__}/`;
 
@@ -31,6 +32,7 @@ function Header({ headerhide, location }) {
     <header className='header'
       style={location.pathname === rootPath ? class1 : class2}
     >
+      <Progress scrollw={scrollw} />
       <div className="lower animated slideInLeft">
         <nav>
           <ul>

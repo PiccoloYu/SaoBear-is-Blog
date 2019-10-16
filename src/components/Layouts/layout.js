@@ -17,7 +17,6 @@ import Transition from "../Transition";
 import Footer from "../Footer/footer";
 import Focusinfo from "../Focusinfo";
 import Backtop from "../Backtop";
-import Progress from "../Progress";
 //import Live2d from "../live2d/index";
 
 import Loadable from 'react-loadable';//解决 wondos 未定义
@@ -129,8 +128,7 @@ class Layout extends React.Component {
           >
             {location.pathname === rootPath ? <Focusinfo screenTop={screenTop} /> : ''}
             {<LoadableComponent />}
-            <Progress ref="scrollbar" scrollw={scrollw} />
-            <Header headerhide={headerhide} location={location} />
+            <Header headerhide={headerhide} location={location} scrollw={scrollw}/>
             <div className="screen animated slideInDown"
               style={{
                 height: `${location.pathname === rootPath ? '97vh' : '0'}`,//25rem
@@ -148,7 +146,7 @@ class Layout extends React.Component {
                   </div> : ''
               }
             </div>
-            <main className={`main ${location.pathname === rootPath ? ' ' : lost[1] === 'Article' ? 'main_img' : 'main_none'}`}
+            <main className={`main ${location.pathname === rootPath ? '' : (lost[1] === 'Article' ? 'main_img' : 'main_none')}`}
               id="main"
               style={{
                 marginLeft: `auto`,
