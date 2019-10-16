@@ -1,9 +1,9 @@
 import React from "react";
 import Screen from "../Screen";
 
-const ScreenMain = ({test,location,title}) => {
+const ScreenMain = ({ test, location, title, url }) => {
 
-  retunr(
+  return (
     <div className="screen animated slideInDown"
       style={{
         height: `${test ? '97vh' : '0'}`,//25rem
@@ -12,7 +12,7 @@ const ScreenMain = ({test,location,title}) => {
     >
       {test ?//<Screen location={location} title={title} />
         <Screen location={location} title={title} /> :
-        lost[1] === 'Article' ?
+        url === 'Article' ?
           <div className="imgDiv animated slideInDown"
             title={title}
           >
