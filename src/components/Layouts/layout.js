@@ -119,23 +119,24 @@ class Layout extends React.Component {
     const { headerhide, screenTop, scrollTop, scrollw } = this.state;
     const rootPath = `${__PATH_PREFIX__}/`;
     const lost = location.pathname.split("/");
+    let test = location.pathname === rootPath;
     return (
       <Provider store={store}>
         <ContextProviderComponent>
           <div
             className="layout"
           >
-            {location.pathname === rootPath ? <Focusinfo screenTop={screenTop} /> : ''}
+            {test ? <Focusinfo screenTop={screenTop} /> : ''}
             {/*<LoadableComponent />*/}
-            <Header headerhide={headerhide} location={location} scrollw={scrollw}/>
-            <Main location={location} rootPath={rootPath} url={lost[1]} children={children}/>
+            <Header headerhide={headerhide} location={location} scrollw={scrollw} />
+            <Main test={test} url={lost[1]} location={location} children={children} />
             <div className="screen animated slideInDown"
               style={{
-                height: `${location.pathname === rootPath ? '97vh' : '0'}`,//25rem
-                position: `${location.pathname === rootPath ? 'fixed' : 'relative'}`,
+                height: `${test ? '97vh' : '0'}`,//25rem
+                position: `${test ? 'fixed' : 'relative'}`,
               }}
             >
-              {location.pathname === rootPath ?//<Screen location={location} title={title} />
+              {test ?//<Screen location={location} title={title} />
                 <Screen location={location} title={title} /> :
                 lost[1] === 'Article' ?
                   <div className="imgDiv animated slideInDown"
