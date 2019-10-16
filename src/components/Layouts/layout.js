@@ -136,7 +136,7 @@ class Layout extends React.Component {
             <Header headerhide={headerhide} location={location} />
             <div className="screen animated slideInDown"
               style={{
-                height: `${location.pathname === rootPath ? '97vh' : '25rem'}`,//25rem
+                height: `${location.pathname === rootPath ? '97vh' : '0'}`,//25rem
                 top: `${location.pathname === rootPath ? '0' : '0'}`,
                 position: `${location.pathname === rootPath ? 'fixed' : 'relative'}`,
               }}
@@ -158,7 +158,7 @@ class Layout extends React.Component {
                 marginRight: `auto`,
                 maxWidth: rhythm(100),
                 padding: `${rhythm(0.5)} ${rhythm(3 / 4)}`,
-                top: `${location.pathname === rootPath ? '100vh' : lost[1] === 'Article' ? '25rem' : '0'}`,
+                top: `${location.pathname === rootPath ? '100vh' : '0'}`,
                 marginTop: `${location.pathname === rootPath ? '' : '4.7rem'}`//29.6875rem
               }}
             >
