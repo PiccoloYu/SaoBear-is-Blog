@@ -1,19 +1,17 @@
 import React from "react";
-import { rhythm } from "../../utils/typography";
+
 //import { CSSTransitionGroup } from 'react-transition-group' // ES6
 //import MyHeader from "../Header/header";
-import { Row, Col } from 'antd';
 import { Provider } from "react-redux";
 import { createStore } from 'redux'
 import todoApp from '../../Redux/reducer';
 //import Aplayer from "../Aplayer";
-import Game from "../Game";
-import Screen from "../Screen";
-import Anchor from "../Anchor";
 
+import Screen from "../Screen";
+import Main from "../Main";
 //import Impress from '../impress/impress';
 import Header from "../Header/header";
-import Transition from "../Transition";
+
 import Footer from "../Footer/footer";
 import Focusinfo from "../Focusinfo";
 import Backtop from "../Backtop";
@@ -146,33 +144,7 @@ class Layout extends React.Component {
                   </div> : ''
               }
             </div>
-            <main className={`main ${location.pathname === rootPath ? '' : (lost[1] === 'Article' ? 'main_img' : 'main_none')}`}
-              id="main"
-              style={{
-                marginLeft: `auto`,
-                marginRight: `auto`,
-                maxWidth: rhythm(100),
-                padding: `${rhythm(0.5)} ${rhythm(3 / 4)}`,
-               // top: `${location.pathname === rootPath ? '100vh!important' : lost[1] === 'Article' ? '25rem!important' : '0'}`,
-                marginTop: `${location.pathname === rootPath ? '' : '4.7rem'}`//29.6875rem
-              }}
-            >
-              <div className="children">
-                <Row>
-                  <Col span={24}>
-                    {location.pathname === rootPath ? <Game /> : ''}
-                  </Col>
-                  <Col span={18}>
-                    <Transition location={location}>
-                      {children}
-                    </Transition>
-                  </Col>
-                  <Col span={6}>
-                    <Anchor pathname={location.pathname} />
-                  </Col>
-                </Row>
-              </div>
-            </main>
+            <Main location={location} rootPath={rootPath} url={lost[1]} children={children}/>
             <Backtop scrollTop={scrollTop} />
             <Footer />
           </div>
