@@ -122,6 +122,8 @@ class Layout extends React.Component {
     const rootPath = `${__PATH_PREFIX__}/`;
     const lost = location.pathname.split("/");
     console.log(location.pathname)
+    console.log(location.pathname === rootPath)
+    console.log(rootPath)
     return (
       <Provider store={store}>
         <ContextProviderComponent>
