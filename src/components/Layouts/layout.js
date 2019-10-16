@@ -136,7 +136,7 @@ class Layout extends React.Component {
             <Header headerhide={headerhide} location={location} />
             <div className="screen animated slideInDown"
               style={{
-                height: `${location.pathname === rootPath ? '97vh' : '0'}`,//25rem
+                height: `${location.pathname === rootPath ? '97vh' : '25rem'}`,//25rem
                 top: `${location.pathname === rootPath ? '0' : '0'}`,
                 position: `${location.pathname === rootPath ? 'fixed' : 'relative'}`,
               }}
