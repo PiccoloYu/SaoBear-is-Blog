@@ -1,10 +1,9 @@
 backend:
-  name: github
-  repo: PiccoloYu/gatsby-blog
-
-media_folder: static/assets
-public_folder: assets
-
+  name: git-gateway
+  branch: master # Branch to update (optional; defaults to master)
+  media_folder: "static/assets"
+  public_folder: assets
+  publish_mode: editorial_workflow
 collections:
   - name: blog
     label: Blog
