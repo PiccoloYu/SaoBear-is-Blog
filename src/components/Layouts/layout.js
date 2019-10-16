@@ -32,6 +32,7 @@ const loader = () => (<div>Loading...</div>)
 const LoadableComponent = Loadable({
   loader: () => import('../Aplayer'),
   loading: loader,
+  delay: 1000
 });
 
 class Layout extends React.Component {
