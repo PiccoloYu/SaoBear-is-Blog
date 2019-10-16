@@ -128,6 +128,7 @@ class Layout extends React.Component {
             {location.pathname === rootPath ? <Focusinfo screenTop={screenTop} /> : ''}
             {/*<LoadableComponent />*/}
             <Header headerhide={headerhide} location={location} scrollw={scrollw}/>
+            <Main location={location} rootPath={rootPath} url={lost[1]} children={children}/>
             <div className="screen animated slideInDown"
               style={{
                 height: `${location.pathname === rootPath ? '97vh' : '0'}`,//25rem
@@ -144,7 +145,6 @@ class Layout extends React.Component {
                   </div> : ''
               }
             </div>
-            <Main location={location} rootPath={rootPath} url={lost[1]} children={children}/>
             <Backtop scrollTop={scrollTop} />
             <Footer />
           </div>
