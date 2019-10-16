@@ -29,11 +29,11 @@ let store = createStore(todoApp);
 
 const loader = () => (<div>Loading...</div>)
 
-const LoadableComponent = Loadable({
+/*const LoadableComponent = Loadable({
   loader: () => import('../Aplayer'),
   loading: loader,
   delay: 1000
-});
+});*/
 
 class Layout extends React.Component {
   constructor(props) {
@@ -126,7 +126,7 @@ class Layout extends React.Component {
             className="layout"
           >
             {location.pathname === rootPath ? <Focusinfo screenTop={screenTop} /> : ''}
-            {<LoadableComponent />}
+            {/*<LoadableComponent />*/}
             <Header headerhide={headerhide} location={location} scrollw={scrollw}/>
             <div className="screen animated slideInDown"
               style={{
