@@ -158,7 +158,7 @@ class Layout extends React.Component {
                 marginRight: `auto`,
                 maxWidth: rhythm(100),
                 padding: `${rhythm(0.5)} ${rhythm(3 / 4)}`,
-                top: `${location.pathname === rootPath ? '100vh' : '0'}`,
+                top: `${location.pathname === rootPath ? '100vh' : lost[1] === 'Article' ? '25rem' : '25rem'}`,
                 marginTop: `${location.pathname === rootPath ? '' : '4.7rem'}`//29.6875rem
               }}
             >
