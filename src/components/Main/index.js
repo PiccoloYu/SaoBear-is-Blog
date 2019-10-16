@@ -11,7 +11,7 @@ class Main extends Component {
     const { test, location, url, children } = this.props;
     console.log(test)
     return (
-      <main className={`main ${test ? (url === 'Article' ? 'main_img' : 'main_none') : 'main_sreen'}`}
+      <main className={`main ${test ? 'main_sreen' : (url === 'Article' ? 'main_img' : 'main_none')}`}
         id="main"
         style={{
           marginLeft: `auto`,
