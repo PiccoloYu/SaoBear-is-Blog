@@ -7,13 +7,6 @@ import Transition from "../Transition";
 
 class Main extends Component {
 
-  componentDidMount() {
-    let main = document.querySelector('#main');
-    if(main.classList[1] !== 'main_sreen'){
-      main.classList.remove(main.classList[1]);
-      main.classList.add('main_sreen')
-    }
-  }
 
   render() {
     const { test, location, url, children } = this.props;
