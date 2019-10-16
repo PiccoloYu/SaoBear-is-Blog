@@ -2,8 +2,6 @@ import React, { Component } from 'react';
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 import { graphql, Link } from "gatsby";
-import { connect } from "react-redux";
-import { isArticle } from "../Redux/action";
 import DealWithData from "../utils/DealWithData";
 
 import {
@@ -53,11 +51,10 @@ class Timeline extends Component {
         day: list[2],
         slug: posts[i].node.fields.slug,
         excerpt: posts[i].node.excerpt,
-        lable:posts[i].node.lable
+        lable: posts[i].node.lable
       }
       datelist.push(item);
     }
-    this.props.isArticle(datelist);
     let sum = DealWithData(datelist, 'year');
     return (
       <div>
@@ -108,16 +105,9 @@ class Timeline extends Component {
   }
 }
 
-const mapStateToProps = (state, ownProps) => {
-  return {
-    article: state.article
-  }
-}
 
-export default connect(
-  mapStateToProps,
-  { isArticle }
-)(Timeline);
+
+export default Timeline;
 
 export const timepageQuery = graphql`
   query timePageQuery($tskip: Int!, $tlimit: Int!)  {

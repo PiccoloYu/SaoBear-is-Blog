@@ -18,7 +18,7 @@ class Main extends Component {
           maxWidth: rhythm(100),
           padding: `${rhythm(0.5)} ${rhythm(3 / 4)}`,
           // top: `${location.pathname === rootPath ? '100vh!important' : lost[1] === 'Article' ? '25rem!important' : '0'}`,
-          marginTop: `${test ? '' : '4.7rem'}`//29.6875rem
+          marginTop: `${test ? '0' : '4.7rem'}`//29.6875rem
         }}
       >
         <div className="children">

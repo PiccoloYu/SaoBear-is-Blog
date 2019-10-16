@@ -6,11 +6,5 @@ export const isPower = power => {
   }
 }
 
-export const isArticle = article => {
-  return {
-    type: 'IS_ARTICLE',
-    article
-  }
-}
 
 
