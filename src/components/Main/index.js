@@ -21,6 +21,12 @@ class Main extends Component {
         Anchor.classList.remove(Anchor.classList[1]);
         Anchor.classList.add('Anchor_top')
       }
+
+      let focusinfo = document.querySelector('.focusinfo');
+      if (focusinfo.classList[1] !== 'focusinfoh') {
+        focusinfo.classList.remove(Anchor.classList[1]);
+        focusinfo.classList.add('focusinfoh')
+      }
     }
   }
 
