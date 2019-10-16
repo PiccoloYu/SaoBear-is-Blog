@@ -9,7 +9,8 @@ class Main extends Component {
 
   render() {
     const { test, location, url, children } = this.props;
-    console.log(test)
+    const a = test ? '我是正确的' : '我是错误的';
+    console.log(a)
     return (
       <main className={`main ${test ? 'main_sreen' : (url === 'Article' ? 'main_img' : 'main_none')}`}
         id="main"
