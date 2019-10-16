@@ -55,6 +55,7 @@ class Focusinfo extends React.Component {
 
   render() {
     const { screenTop, power } = this.props;
+    console.log(screenTop)
     return (
       <div className="focusinfo animated slideInRight">
         <div className="header-info">
