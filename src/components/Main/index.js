@@ -15,6 +15,12 @@ class Main extends Component {
         main.classList.remove(main.classList[1]);
         main.classList.add('main_sreen')
       }
+
+      let Anchor = document.querySelector('.Anchor-main');
+      if (Anchor.classList[1] !== 'Anchor_top') {
+        Anchor.classList.remove(Anchor.classList[1]);
+        Anchor.classList.add('Anchor_top')
+      }
     }
   }
 
