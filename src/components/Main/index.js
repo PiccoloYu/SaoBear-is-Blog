@@ -9,7 +9,9 @@ class Main extends Component {
 
   render() {
     const { location, rootPath, url, children } = this.props;
-    console.log('当前：'+location.pathname === rootPath)
+    console.log(location.pathname)
+    console.log(rootPath)
+    console.log(location.pathname === rootPath)
     return (
       <main className={`main ${location.pathname === rootPath ? 'main_sreen' : (url === 'Article' ? 'main_img' : 'main_none')}`}
         id="main"
