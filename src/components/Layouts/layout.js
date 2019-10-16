@@ -121,9 +121,6 @@ class Layout extends React.Component {
     const { headerhide, screenTop, scrollTop, scrollw } = this.state;
     const rootPath = `${__PATH_PREFIX__}/`;
     const lost = location.pathname.split("/");
-    console.log(location.pathname)
-    console.log(location.pathname === rootPath)
-    console.log(rootPath)
     return (
       <Provider store={store}>
         <ContextProviderComponent>
@@ -158,7 +155,7 @@ class Layout extends React.Component {
                 marginRight: `auto`,
                 maxWidth: rhythm(100),
                 padding: `${rhythm(0.5)} ${rhythm(3 / 4)}`,
-                top: `${location.pathname === rootPath ? '100vh' :  '25rem'}`,
+                top: `${location.pathname === rootPath ? '100vh !important' : lost[1] === 'Article' ? '25rem' : '0'}`,
                 marginTop: `${location.pathname === rootPath ? '' : '4.7rem'}`//29.6875rem
               }}
             >
