@@ -10,7 +10,8 @@ class Main extends Component {
   render() {
     const { location, rootPath, url, children } = this.props;
     return (
-      <main className={`main ${location.pathname === rootPath ? 'main_sreen' : 'main_none'}`}
+      <main className={`main ${location.pathname === rootPath ? 'main_sreen' : (url === 'Article' ? 'main_img' : 'main_none')}`}
+        id="main"
         style={{
           marginLeft: `auto`,
           marginRight: `auto`,
