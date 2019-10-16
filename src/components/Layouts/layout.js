@@ -148,14 +148,14 @@ class Layout extends React.Component {
                   </div> : ''
               }
             </div>
-            <main className="main"
+            <main className={`main ${location.pathname === rootPath ? 'main_sreen' : lost[1] === 'Article' ? 'main_img' : 'main_none'}`}
               id="main"
               style={{
                 marginLeft: `auto`,
                 marginRight: `auto`,
                 maxWidth: rhythm(100),
                 padding: `${rhythm(0.5)} ${rhythm(3 / 4)}`,
-                top: `${location.pathname === rootPath ? '100vh!important' : lost[1] === 'Article' ? '25rem!important' : '0!important'}`,
+               // top: `${location.pathname === rootPath ? '100vh!important' : lost[1] === 'Article' ? '25rem!important' : '0'}`,
                 marginTop: `${location.pathname === rootPath ? '' : '4.7rem'}`//29.6875rem
               }}
             >
