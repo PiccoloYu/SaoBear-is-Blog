@@ -12,7 +12,7 @@ import './index.scss'
 function Header({ headerhide, location, scrollw }) {
   //const [current, setCurrent] = useState('mail');
   const rootPath = `${__PATH_PREFIX__}/`;
-
+  console.log(headerhide)
   let class1 = {
     backgroundColor: `${headerhide ? 'rgba(255,255,255,.85)' : 'rgba(255,255,255,0)'}`,
     boxShadow: `${headerhide ? '0 1px 40px -8px rgba(0, 0, 0, .5)' : 'unset'}`,
