@@ -8,10 +8,10 @@ import Transition from "../Transition";
 class Main extends Component {
 
   render() {
-    const { test,location, url, children } = this.props;
+    const { test, location, url, children } = this.props;
     console.log(test)
     return (
-      <main className={`main ${test ? 'main_sreen' : (url === 'Article' ? 'main_img' : 'main_none')}`}
+      <main className={`main ${test ? (url === 'Article' ? 'main_img' : 'main_none') : 'main_sreen'}`}
         id="main"
         style={{
           marginLeft: `auto`,
