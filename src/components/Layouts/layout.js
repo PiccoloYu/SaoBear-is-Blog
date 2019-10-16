@@ -148,7 +148,7 @@ class Layout extends React.Component {
                   </div> : ''
               }
             </div>
-            <main className={`main ${location.pathname === rootPath ? 'main_sreen' : ''`}
+            <main className={`main ${location.pathname === rootPath ? ' ' : lost[1] === 'Article' ? 'main_img' : 'main_none'}`}
               id="main"
               style={{
                 marginLeft: `auto`,

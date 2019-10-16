@@ -99,6 +99,7 @@ body {
   //top: 100vh!important;
   left: 0;
   right: 0;
+  top:100vh;
   background: #f4f4f4;
   background-position: center;
   background-attachment: fixed;
@@ -115,11 +116,11 @@ body {
 }
 
 .main_img{
-  top:25rem
+  top:25rem!important;
 }
 
 .main_none{
-  top:0
+  top:0!important
 }
 
 .main:after {
