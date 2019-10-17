@@ -11,7 +11,7 @@ import Main from "../Main";
 import ScreenMain from "../ScreenMain";
 //import Impress from '../impress/impress';
 import Header from "../Header/header";
-
+import Focusinfo from "../Focusinfo";
 import Footer from "../Footer/footer";
 import Backtop from "../Backtop";
 //import Live2d from "../live2d/index";
@@ -126,7 +126,8 @@ class Layout extends React.Component {
           >
             {<LoadableComponent />}
             {<Header headerhide={headerhide} location={location} scrollw={scrollw} />}
-            <ScreenMain screenTop={screenTop} test={test} location={location} title={title} url={lost[1]} />
+            {test ? <Focusinfo screenTop={screenTop} test={test}/> : ''}
+            <ScreenMain test={test} location={location} title={title} url={lost[1]} />
             <Main test={test} url={lost[1]} location={location} children={children} />
             {<Backtop scrollTop={scrollTop} />}
             <Footer />

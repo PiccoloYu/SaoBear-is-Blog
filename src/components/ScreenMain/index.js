@@ -1,8 +1,7 @@
 import React from "react";
 import Screen from "../Screen";
-import Focusinfo from "../Focusinfo";
 
-const ScreenMain = ({ test, location, title, url ,screenTop}) => {
+const ScreenMain = ({ test, location, title, url }) => {
 
 
 
@@ -13,7 +12,6 @@ const ScreenMain = ({ test, location, title, url ,screenTop}) => {
         position: `${test ? 'fixed' : 'relative'}`,
       }}
     >
-      <Focusinfo screenTop={screenTop} test={test}/>
       {test ?//<Screen location={location} title={title} />
         <Screen location={location} title={title} /> :
         url === 'Article' ?
