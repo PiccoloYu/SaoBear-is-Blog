@@ -73,7 +73,7 @@ exports.createPages = ({ graphql, actions }) => {
     Array.from({ length: numPages }).forEach((_, i) => {
       createPage({
         path: i === 0 ? `/` : `/Page/${i + 1}`,
-        component: path.resolve('./src/templates/blog-list.js'),
+        component: path.resolve('src/templates/blog-list.js'),
         context: {
           limit: postsPerPage,
           skip: i * postsPerPage,
@@ -100,7 +100,7 @@ exports.createPages = ({ graphql, actions }) => {
     Array.from({ length: numtimePages }).forEach((_, i) => {
       createPage({
         path: i === 0 ? `/Timeline` : `/Timeline/${i + 1}`,
-        component: path.resolve('./src/templates/timeline.js'),
+        component: path.resolve('src/templates/timeline.js'),
         context: {
           tlimit: timePage,
           tskip: i * timePage,
