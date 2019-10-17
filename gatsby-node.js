@@ -100,7 +100,7 @@ exports.createPages = ({ graphql, actions }) => {
     Array.from({ length: numtimePages }).forEach((_, i) => {
       createPage({
         path: i === 0 ? `/Timeline` : `/Timeline/${i + 1}`,
-        component: path.resolve('src/templates/timeline.js'),
+        component: path.resolve('src/templates/Timeline.js'),
         context: {
           tlimit: timePage,
           tskip: i * timePage,
