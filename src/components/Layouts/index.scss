@@ -136,7 +136,7 @@ body {
 }
 
 .children {
-  width: 65%;
+  width: 67%;
   margin: 0 auto;
   position: relative;
   //box-shadow: 0 15px 35px rgba(50, 50, 93, .1), 0 5px 15px rgba(0, 0, 0, .07) !important;
@@ -380,7 +380,7 @@ body {
   //height: calc(100vh - 1.875rem)
   background: #fff; //rgba(252, 250, 242, 1)
   //box-shadow: 0 1px 4px rgba(0, 0, 0, .15);
-  box-shadow: 0 1px 2px 0 rgba(0,0,0,.05);
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, .05);
   width: 100%;
   padding: 10px;
   text-align: center;
@@ -430,6 +430,7 @@ body {
 
 .blog-post {
   z-index: 100;
+  line-height: 1.5;
 
   a {
     box-shadow: unset;
