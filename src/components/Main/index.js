@@ -6,39 +6,6 @@ import Anchor from "../Anchor";
 import Transition from "../Transition";
 
 class Main extends Component {
-
-    componentDidMount() {
-        console.log('第一次渲染')
-        /*8const { test } = this.props;
-        if (test) {
-          let main = document.querySelector('#main');
-          if (main) {
-            if (main.classList[1] !== 'main_sreen') {
-              main.classList.remove(main.classList[1]);
-              main.classList.add('main_sreen')
-            }
-          }
-          let Anchor = document.querySelector('.Anchor-main');
-          if (Anchor) {
-            if (Anchor.classList[1] !== 'Anchor_top') {
-              Anchor.classList.remove(Anchor.classList[1]);
-              Anchor.classList.add('Anchor_top')
-            }
-          }
-
-          let focusinfo = document.querySelector('.focusinfo');
-          if(focusinfo){
-            if (focusinfo.classList[1] !== 'focusinfoh') {
-              focusinfo.classList.remove(Anchor.classList[1]);
-              focusinfo.classList.add('focusinfoh')
-            }
-          }
-        }*/
-    }
-    componentDidUpdate() {
-        console.log('组件更新');
-    }
-
     render() {
         const { test, location, url, children } = this.props;
         const a = test ? 'main_sreen' : (url === 'Article' ? 'main_img' : 'main_none');
