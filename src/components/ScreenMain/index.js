@@ -8,7 +8,8 @@ const ScreenMain = ({ test, location, title, url }) => {
   return (
     <div className="screen animated slideInDown"
       style={{
-        height: `${test ? '97vh' : '0'}`,//25rem
+        height: `97vh`,//25rem
+        top: `${test ? '0' : '-97vh'}`,//25rem
         position: `${test ? 'fixed' : 'relative'}`,
       }}
     >
