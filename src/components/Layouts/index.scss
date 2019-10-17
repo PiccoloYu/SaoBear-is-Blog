@@ -44,7 +44,8 @@ body {
   width: 100%;
   transform: all 1s;
   transition-duration: 1s, 1s; //过渡
-  top:0;
+  top: 0;
+
   //height: 28.125rem;
   //border: 1px solid red;
   .imgDiv {
@@ -110,16 +111,16 @@ body {
   //background-origin: content-box;
 }
 
-.main_sreen{
-  top:100vh
+.main_sreen {
+  top: 100vh
 }
 
-.main_img{
-  top:25rem!important;
+.main_img {
+  top: 25rem !important;
 }
 
-.main_none{
-  top:0!important
+.main_none {
+  top: 0 !important
 }
 
 .main:after {
@@ -234,6 +235,14 @@ body {
   100% {
     transform: translate(0px, 0px);
   }
+}
+
+.focusinfoh {
+  display: block;
+}
+
+.focusinfon {
+  display: none;
 }
 
 .focusinfo {
@@ -355,6 +364,14 @@ body {
 .Anchor-main {
   transform: all 1s;
   transition-duration: 1s, 1s; //过渡
+}
+
+.Anchor_top {
+  padding-top: 185px;
+}
+
+.Anchor_none {
+  padding-top: 0;
 }
 
 .Anchor {

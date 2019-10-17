@@ -32,10 +32,7 @@ let Anchor = ({ pathname }) => {
         const posts = data.allMarkdownRemark.nodes;
         let latestPost = posts.slice(0, 3);
         return (
-          <div className="Anchor-main"
-            style={{
-              paddingTop: `${pathname === rootPath ? '185px' : '0'}`
-            }}
+          <div className={`Anchor-main ${pathname === rootPath ? 'Anchor_top' : 'Anchor_none'}`}
           >
             <Affix offsetTop={90}>
               <div className="Anchor">

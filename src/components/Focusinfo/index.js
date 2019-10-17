@@ -54,9 +54,9 @@ class Focusinfo extends React.Component {
   }
 
   render() {
-    const { screenTop, power } = this.props;
+    const { screenTop, power, test } = this.props;
     return (
-      <div className="focusinfo animated slideInRight">
+      <div className={`focusinfo animated slideInRight `}>
         <div className="header-info">
           <p>Keep trying no matter how hard it seems. it will get easier.</p>
           <div className="control">
