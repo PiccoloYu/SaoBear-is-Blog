@@ -4,12 +4,11 @@ import Screen from "../Screen";
 const ScreenMain = ({ test, location, title, url }) => {
 
 
-
   return (
     <div className="screen animated slideInDown"
       style={{
         height: `97vh`,//25rem
-        top: `${test ? '0' : '-97vh'}`,//25rem
+        top: `${test ? '0' : url === 'Article' ? '' : '-97vh'}`,//25rem
         position: `${test ? 'fixed' : 'relative'}`,
       }}
     >
