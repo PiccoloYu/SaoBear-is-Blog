@@ -114,6 +114,15 @@ module.exports = {
       },
     },
     `gatsby-plugin-netlify-cms`,
-    `gatsby-plugin-netlify`,
+    {
+      resolve: `gatsby-plugin-netlify`,
+      options: {
+        headers: {
+          '/*':[
+            'X-Frame-Options: sameorigin'
+          ]
+        },
+      },
+    }
   ],
 }
