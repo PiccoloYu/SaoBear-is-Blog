@@ -94,7 +94,7 @@ exports.createPages = ({ graphql, actions }) => {
       })
     })
 
-    const timePage = 4;
+    const timePage = 5;
     const numtimePages = Math.ceil(posts.length / timePage);
 
     Array.from({ length: numtimePages }).forEach((_, i) => {
