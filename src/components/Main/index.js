@@ -8,7 +8,7 @@ import Transition from "../Transition";
 class Main extends Component {
 
   componentDidUpdate() {
-    /*const { test } = this.props;
+    const { test } = this.props;
     if (test) {
       let main = document.querySelector('#main');
       if (main.classList[1] !== 'main_sreen') {
@@ -27,7 +27,7 @@ class Main extends Component {
         focusinfo.classList.remove(Anchor.classList[1]);
         focusinfo.classList.add('focusinfoh')
       }
-    }*/
+    }
   }
 
   render() {
