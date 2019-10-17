@@ -11,21 +11,26 @@ class Main extends Component {
     const { test } = this.props;
     if (test) {
       let main = document.querySelector('#main');
-      if (main.classList[1] !== 'main_sreen') {
-        main.classList.remove(main.classList[1]);
-        main.classList.add('main_sreen')
+      if (main) {
+        if (main.classList[1] !== 'main_sreen') {
+          main.classList.remove(main.classList[1]);
+          main.classList.add('main_sreen')
+        }
       }
-
       let Anchor = document.querySelector('.Anchor-main');
-      if (Anchor.classList[1] !== 'Anchor_top') {
-        Anchor.classList.remove(Anchor.classList[1]);
-        Anchor.classList.add('Anchor_top')
+      if (Anchor) {
+        if (Anchor.classList[1] !== 'Anchor_top') {
+          Anchor.classList.remove(Anchor.classList[1]);
+          Anchor.classList.add('Anchor_top')
+        }
       }
 
       let focusinfo = document.querySelector('.focusinfo');
-      if (focusinfo.classList[1] !== 'focusinfoh') {
-        focusinfo.classList.remove(Anchor.classList[1]);
-        focusinfo.classList.add('focusinfoh')
+      if(focusinfo){
+        if (focusinfo.classList[1] !== 'focusinfoh') {
+          focusinfo.classList.remove(Anchor.classList[1]);
+          focusinfo.classList.add('focusinfoh')
+        }
       }
     }
   }
