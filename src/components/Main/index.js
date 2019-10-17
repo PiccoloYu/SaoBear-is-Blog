@@ -8,7 +8,7 @@ import Transition from "../Transition";
 class Main extends Component {
 
   componentDidUpdate() {
-    const { test } = this.props;
+    /*8const { test } = this.props;
     if (test) {
       let main = document.querySelector('#main');
       if (main) {
@@ -32,7 +32,7 @@ class Main extends Component {
           focusinfo.classList.add('focusinfoh')
         }
       }
-    }
+    }*/
   }
 
   render() {
