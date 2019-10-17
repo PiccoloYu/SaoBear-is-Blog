@@ -5,7 +5,6 @@ import React from "react"
 import { Link, graphql } from "gatsby"
 //import { Icon } from 'antd';
 import MyTag from "../components/Tag/";
-import Bio from "../components/bio"
 import SEO from "../components/seo"
 import { rhythm, scale } from "../utils/typography"
 
@@ -38,21 +37,8 @@ class BlogPostTemplate extends React.Component {
       prevgo: '',
       nextgo: '',
     };
-    this.next = this.next.bind(this);
-    this.prev = this.prev.bind(this);
   }
 
-  prev() {
-    this.setState({
-      prevgo: 'slideInLeft'
-    })
-  }
-
-  next() {
-    this.setState({
-      prevgo: 'slideInRight'
-    })
-  }
 
 
   render() {
@@ -94,7 +80,7 @@ class BlogPostTemplate extends React.Component {
             }}
           />
           <footer>
-            <Bio />
+
           </footer>
         </article>
         <nav className="page_main">

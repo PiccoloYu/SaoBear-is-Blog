@@ -72,7 +72,7 @@ class Timeline extends Component {
                       <VerticalTimelineElement
                         key={item.date}
                         className="vertical-timeline-element--education"
-                        contentStyle={{ background: 'rgba(252, 250, 242, 1)', color: '#000', borderTop: "3px solid orange" }}
+                        contentStyle={{ background: 'rgba(250, 250, 250, 1)', color: '#000', borderTop: "3px solid orange" }}
                         contentArrowStyle={{ borderRight: '7px solid  rgb(255, 255, 255)' }}
                         date={item.date}
                         iconStyle={{ background: 'orange', color: '#fff' }}

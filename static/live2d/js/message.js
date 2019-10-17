@@ -62,6 +62,7 @@ initTips();
 
 (function () {
     var text;
+    console.log(document.referrer)
     if (document.referrer !== '') {
         var referrer = document.createElement('a');
         referrer.href = document.referrer;
@@ -97,7 +98,7 @@ initTips();
                 text = '嗨~ 快来逗我玩吧！';
             }
         } else {
-            text = '欢迎阅读<span style="color:#0099cc;">「 ' + document.title.split(' - ')[0] + ' 」</span>';
+            text = '欢迎阅读<span style="color:#0099cc;">「 ' + document.title.split(' - ')[2] + ' 」</span>';
         }
     }
     showMessage(text, 12000);
