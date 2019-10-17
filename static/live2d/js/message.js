@@ -131,18 +131,16 @@ function initLive2d() {
         $('#landlord').css('display', 'none');
     })
     $('.top-button').fadeOut(0).on('click', () => {
-        let top = document.querySelector('.ant-back-top');
+        let top = document.querySelector('.BackTop');
         if (top !== '' && top !== null) {
             top.click();
-        } else {
-            showMessage('已经是顶部了哟...', 1500)
         }
     })
     $('.home-button').fadeOut(0).on('click', () => {
         window.location.href = "/";
     })
     $('.archive-button').fadeOut(0).on('click', () => {
-        window.location.href = "/archive";
+        window.location.href = "/Timeline";
     })
     $('.hide-button').hover(() => {
         showMessage('又到了要说再见的时候了吗…', 1500);

@@ -54,11 +54,10 @@
 
 .aplayer {
   &.aplayer-fixed {
+    z-index:999;
     .aplayer-lrc {
       bottom: 30px !important;
-
       .aplayer-lrc-contents {
-
         p {
           font-size: 22px;
           line-height: 25px !important;
