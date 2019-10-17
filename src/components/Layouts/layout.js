@@ -118,25 +118,31 @@ class Layout extends React.Component {
     const rootPath = `${__PATH_PREFIX__}/`;
     const lost = location.pathname.split("/");
     const test = location.pathname === rootPath;
-    return (
-      <Provider store={store}>
-        <ContextProviderComponent>
-          <div
-            className="layout"
-          >
-            {<LoadableComponent />}
-            {<Header headerhide={headerhide} location={location} scrollw={scrollw} />}
-            {test ? <Focusinfo screenTop={screenTop} test={test}/> : ''}
-            <ScreenMain test={test} location={location} title={title} url={lost[1]} />
-            <Main test={test} url={lost[1]} location={location} children={children} />
-            {<Backtop scrollTop={scrollTop} />}
-            <Footer />
-          </div>
-        </ContextProviderComponent>
-      </Provider >
-    )
+    if (location.pathname === '/offline-plugin-app-shell-fallback/') {
+      return null;
+    }
+    else {
+      return (
+        <Provider store={store}>
+          <ContextProviderComponent>
+            <div
+              className="layout"
+            >
+              {<LoadableComponent />}
+              {<Header headerhide={headerhide} location={location} scrollw={scrollw} />}
+              {test ? <Focusinfo screenTop={screenTop} test={test} /> : ''}
+              <ScreenMain test={test} location={location} title={title} url={lost[1]} />
+              <Main test={test} url={lost[1]} location={location} children={children} />
+              {<Backtop scrollTop={scrollTop} />}
+              <Footer />
+            </div>
+          </ContextProviderComponent>
+        </Provider >
+      )
+    }
   }
 }
 
 
 export default Layout
+

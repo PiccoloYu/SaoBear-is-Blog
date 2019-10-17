@@ -83,6 +83,17 @@ exports.createPages = ({ graphql, actions }) => {
       });
     });
 
+
+    tagSet.forEach((tag) => {
+      createPage({
+        path: `/Label/${tag}`,
+        component: path.resolve('src/templates/tag.js'),
+        context: {
+          tag,
+        },
+      })
+    })
+
     const timePage = 4;
     const numtimePages = Math.ceil(posts.length / timePage);
 
@@ -98,17 +109,6 @@ exports.createPages = ({ graphql, actions }) => {
         },
       });
     });
-
-
-    tagSet.forEach((tag) => {
-      createPage({
-        path: `/Label/${tag}`,
-        component: path.resolve('src/templates/tag.js'),
-        context: {
-          tag,
-        },
-      })
-    })
   })
 }
 
