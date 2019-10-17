@@ -9,7 +9,6 @@ module.exports = {
     },
   },
   plugins: [
-    `gatsby-plugin-netlify-cms`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -87,13 +86,23 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Gatsby Starter Blog`,
-        short_name: `GatsbyJS`,
+        name: `SaoBear Blog`,
+        short_name: `SaoBear`,
         start_url: `/`,
-        background_color: `#ffffff`,
+        background_color: `#ededed`,
         theme_color: `#663399`,
-        display: `minimal-ui`,
-        //icon: `content/assets/gatsby-icon.png`,
+        display: `standalone`,
+        icons: [
+          {
+            src: '/favicons/Author192.png',
+            sizes: '192x192',
+            type: 'image/png',
+          }, {
+            src: '/favicons/Author512.png',
+            sizes: '512x512',
+            type: 'image/png',
+          }
+        ],
       },
     },
     `gatsby-plugin-offline`,
@@ -104,6 +113,7 @@ module.exports = {
         pathToConfigModule: `src/utils/typography`,
       },
     },
-
+    `gatsby-plugin-netlify-cms`,
+    `gatsby-plugin-netlify`,
   ],
 }
