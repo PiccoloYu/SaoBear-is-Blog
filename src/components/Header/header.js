@@ -19,26 +19,25 @@ function Header({ headerhide, location, scrollw }) {
 
   let class2 = {
     backgroundColor: `${headerhide ? 'rgba(255,255,255,.6)' : '#fff'}`,
-    boxShadow: `${headerhide ? '0 1px 40px -8px rgba(0, 0, 0, .5)' : '0 1px 10px -2px rgba(0, 0, 0, .5)'}`,
+    boxShadow: `${headerhide ? '0 1px 40px -8px rgba(0, 0, 0, .5)' : ''}`,
   }
 
-  /* let handleClick = e => {
-     setCurrent(e.key)
-   };*/
+  let linkstyle = headerhide ? 'linkstyleh' : 'linkstylen';
 
 
   const a = Math.random();
 
   return (
-    <header className='header'
+    <header
+      className='header'
       style={location.pathname === rootPath ? class1 : class2}
     >
       <Progress scrollw={scrollw} />
-      <div className="lower animated slideInLeft">
-        <nav>
-          <ul>
+      <div className={`lower`}>
+        <nav className={`${location.pathname=== rootPath ?  (headerhide ? 'fadeInRight animated ' : 'animated') : ''}`}>
+          <ul className={`${location.pathname === rootPath ? linkstyle : ''}`}>
             <li>
-              <Link to={`/?random=${a}`} className="hvr-underline-from-center ">
+              <Link to={`/?random=${a}`} className="hvr-underline-from-center">
                 <Home />
                 首页
               </Link>

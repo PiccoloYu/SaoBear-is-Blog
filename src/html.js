@@ -49,8 +49,8 @@ export default function HTML(props) {
                   `,
           }}
         />
-        <script type="text/javascript" src="./live2d/js/live2d.js"></script>
-        <script type="text/javascript" src="./live2d/js/message.js"></script>
+        <script type="text/javascript" src={`./live2d/js/live2d.js?v=${new Date()}`}></script>
+        <script type="text/javascript" src={`./live2d/js/message.js?v=${new Date()}`}></script>
         <script
           dangerouslySetInnerHTML={{
             __html: `

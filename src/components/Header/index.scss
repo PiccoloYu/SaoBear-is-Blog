@@ -24,9 +24,6 @@
       display: block !important;
       position: relative;
       float: right;
-      display: none;
-      animation: searchbox .2s;
-
       &>ul {
         margin: 0;
         padding: 0;
@@ -41,11 +38,13 @@
           &>a {
             padding: 10px 0;
             display: inline-block;
-            color: #666;
+            transform: all .4s;
+            transition: all .4s ease;
             outline: none;
             text-decoration: none;
             box-shadow: none;
-            &>i{
+            color:#666;
+            &>i {
               color: #666
             }
           }
@@ -57,8 +56,30 @@
 
 }
 
+.linkstyleh {
+  &>li {
+    &>a {
+      opacity:1;
+    }
+  }
+}
+
+.linkstylen {
+  &>li {
+    &>a {
+      opacity:0;
+    }
+  }
+}
+
+
 .header:hover {
-  background: #fff !important
+  background: #fff !important;
+
+  a {
+    opacity:1;
+  }
+
 }
 
 //更改搜索框图标位置
