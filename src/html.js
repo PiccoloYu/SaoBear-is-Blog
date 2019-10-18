@@ -3,7 +3,7 @@ import PropTypes from "prop-types"
 
 export default function HTML(props) {
   return (
-    <html {...props.htmlAttributes}>
+    <html manifest="./m.manifest" {...props.htmlAttributes}>
       <head>
         <meta charSet="utf-8" />
         <meta httpEquiv="x-ua-compatible" content="ie=edge" />
@@ -57,6 +57,8 @@ export default function HTML(props) {
             loadlive2d("live2d", "./live2d/model/xiaomai/xiaomai.json");
                   `,
           }}
+        />
+        <script id='varsion' src={`./version.js?v=${new Date()}`}
         />
       </body>
     </html>

@@ -27,6 +27,8 @@ function Header({ headerhide, location, scrollw }) {
    };*/
 
 
+  const a = Math.random();
+
   return (
     <header className='header'
       style={location.pathname === rootPath ? class1 : class2}
@@ -36,19 +38,19 @@ function Header({ headerhide, location, scrollw }) {
         <nav>
           <ul>
             <li>
-              <Link to="/" className="hvr-underline-from-center ">
+              <Link to={`/?random=${a}`} className="hvr-underline-from-center ">
                 <Home />
                 首页
               </Link>
             </li>
             <li>
-              <Link to="/Timeline" className="hvr-underline-from-center">
+              <Link to={`/Timeline?random=${a}`} className="hvr-underline-from-center">
                 <Archive />
                 归档
                 </Link>
             </li>
             <li>
-              <Link to="/Labellist" className="hvr-underline-from-center">
+              <Link to={`/Labellist?random=${a}`} className="hvr-underline-from-center">
                 <Label />
                 标签
                 </Link>

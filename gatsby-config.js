@@ -118,7 +118,7 @@ module.exports = {
       resolve: `gatsby-plugin-netlify`,
       options: {
         headers: {
-          '/*':[
+          '/*': [
             'X-Frame-Options: sameorigin'
           ]
         },
