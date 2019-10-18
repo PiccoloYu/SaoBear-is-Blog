@@ -13,17 +13,53 @@
   transition: all .4s ease;
   text-align: center;
 
+  .site-branding {
+    float: left;
+    position: absolute;
+    height: 75px;
+    line-height: 75px;
+    margin-left: 6px;
+    padding-top: .3125rem;
+    padding-bottom: .3125rem;
+    font-size: 1.25rem;
+    white-space: nowrap;
+    padding-left: 20px;
+    cursor: pointer;
+    a{
+      box-shadow: unset;
+    }
+    .logo {
+      background-color: rgba(255, 255, 255, .5);
+      border-radius: 3px;
+      color: #464646;
+      padding: 1px 5px 2px;
+      font-weight: 800;
+    }
+
+    span{
+      color: #464646;
+    }
+
+  }
+
+  .site-branding:hover{
+    span{
+      color: orange;
+    }
+  }
+
   .lower {
     display: inline-block;
     margin: 15px 0 0 10px;
     font-size: 16px;
     position: relative;
     pointer-events: auto !important;
-
+    text-align: center;
     &>nav {
       display: block !important;
       position: relative;
       float: right;
+      padding-right: 20px;
       &>ul {
         margin: 0;
         padding: 0;
@@ -43,7 +79,8 @@
             outline: none;
             text-decoration: none;
             box-shadow: none;
-            color:#666;
+            color: #666;
+
             &>i {
               color: #666
             }
@@ -59,7 +96,7 @@
 .linkstyleh {
   &>li {
     &>a {
-      opacity:1;
+      opacity: 1;
     }
   }
 }
@@ -67,7 +104,7 @@
 .linkstylen {
   &>li {
     &>a {
-      opacity:0;
+      opacity: 0;
     }
   }
 }
@@ -77,7 +114,7 @@
   background: #fff !important;
 
   a {
-    opacity:1;
+    opacity: 1;
   }
 
 }

@@ -33,8 +33,16 @@ function Header({ headerhide, location, scrollw }) {
       style={location.pathname === rootPath ? class1 : class2}
     >
       <Progress scrollw={scrollw} />
+      <div className='site-branding'>
+        <Link to={`/?random=${a}`}>
+          <ruby>
+            <span className="logo">SaoBear</span>
+            <span>'is Blog</span>
+          </ruby>
+        </Link>
+      </div>
       <div className={`lower`}>
-        <nav className={`${location.pathname=== rootPath ?  (headerhide ? 'fadeInRight animated ' : 'animated') : ''}`}>
+        <nav className={`${location.pathname === rootPath ? (headerhide ? 'fadeInRight animated ' : 'animated') : ''}`}>
           <ul className={`${location.pathname === rootPath ? linkstyle : ''}`}>
             <li>
               <Link to={`/?random=${a}`} className="hvr-underline-from-center">
