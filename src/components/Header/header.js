@@ -73,7 +73,7 @@ function Header({ headerhide, location, scrollw }) {
                 </Link>
                 </li>
                 <li>
-                  <Link to="/" className="hvr-underline-from-center">
+                  <Link to="/Comment" className="hvr-underline-from-center">
                     <Message />
                     留言
                 </Link>
