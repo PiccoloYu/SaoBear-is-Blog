@@ -1,4 +1,4 @@
-function DealWithData(data, attr) {//对数据 进行筛选
+function DealWithData(data, attr) {//对数据 进行筛选 将attr 一样的忽略 清除
   let c = [];
   let d = {};
   data.forEach(element => {

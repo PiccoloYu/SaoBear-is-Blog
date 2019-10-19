@@ -1,7 +1,10 @@
 ---
-title: My Second Post!
+path: "My Second Post!"
+title: my-second-post
 date: "2015-05-06T23:46:37.121Z"
-tag: "daily"
+tag:
+  - daily
+  - test
 ---
 
 Wow! I love blogging so much already.

@@ -17,7 +17,7 @@ class tag extends Component {
 export default tag;
 
 export const tagQuery = graphql`
-  query tagPageQuery($tag: [String!]) {
+  query tagPageQuery($tag: [String]) {
     site {
       siteMetadata {
         title

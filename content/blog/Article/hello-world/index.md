@@ -1,8 +1,11 @@
 ---
-title: Hello World
+path: "Hello World"
+title: hello-world
 date: "2019-10-01T22:12:03.284Z"
 description: "Hello World"
-tag: "daily"
+tag: 
+  - daily
+  - test
 ---
 
 This is my first post on my new fake blog! How exciting!

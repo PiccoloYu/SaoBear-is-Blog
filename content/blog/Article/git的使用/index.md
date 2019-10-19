@@ -1,8 +1,10 @@
 ---
-title: Git的添加提交
+path: Git的使用
+title: Git的使用
 date: "2019-10-15T18:23:03.284Z"
 description: "Git的添加提交"
-tag: "Git"
+tag:
+  - Git
 ---
 
 #### 添加文件：

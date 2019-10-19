@@ -18,16 +18,17 @@
     position: absolute;
     height: 75px;
     line-height: 75px;
-    margin-left: 6px;
     padding-top: .3125rem;
     padding-bottom: .3125rem;
     font-size: 1.25rem;
     white-space: nowrap;
-    padding-left: 20px;
+    padding-left: 26px;
     cursor: pointer;
-    a{
+
+    a {
       box-shadow: unset;
     }
+
     .logo {
       background-color: rgba(255, 255, 255, .5);
       border-radius: 3px;
@@ -36,14 +37,14 @@
       font-weight: 800;
     }
 
-    span{
+    span {
       color: #464646;
     }
 
   }
 
-  .site-branding:hover{
-    span{
+  .site-branding:hover {
+    span {
       color: orange;
     }
   }
@@ -55,11 +56,13 @@
     position: relative;
     pointer-events: auto !important;
     text-align: center;
+
     &>nav {
       display: block !important;
       position: relative;
       float: right;
       padding-right: 20px;
+
       &>ul {
         margin: 0;
         padding: 0;
@@ -186,4 +189,13 @@
 .nav.ant-menu-horizontal>.ant-menu-item:hover {
   border-top: 2px solid #1DA57A;
   border-bottom: 2px solid transparent;
+}
+
+.Search {
+  position: relative;
+  float: right;
+  padding-right: 26px;
+  height: 75px;
+  padding-top:25px;
+  vertical-align:middle;
 }

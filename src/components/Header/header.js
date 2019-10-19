@@ -2,7 +2,7 @@ import React, {/* useState */ } from 'react';
 //import { Input } from 'antd';
 import { Home, Archive, Message, About, Label } from "../../utils/Svgicons";
 //import { Link } from 'react-router-dom';
-import { Link } from "gatsby";
+import { Link, StaticQuery, graphql } from "gatsby";
 import Progress from "../Progress";
 import './index.scss'
 
@@ -27,57 +27,69 @@ function Header({ headerhide, location, scrollw }) {
 
   const a = Math.random();
 
+
   return (
-    <header
-      className='header'
-      style={location.pathname === rootPath ? class1 : class2}
-    >
-      <Progress scrollw={scrollw} />
-      <div className='site-branding'>
-        <Link to={`/?random=${a}`}>
-          <ruby>
-            <span className="logo">SaoBear</span>
-            <span>'is Blog</span>
-          </ruby>
-        </Link>
-      </div>
-      <div className={`lower`}>
-        <nav className={`${location.pathname === rootPath ? (headerhide ? 'fadeInRight animated ' : 'animated') : ''}`}>
-          <ul className={`${location.pathname === rootPath ? linkstyle : ''}`}>
-            <li>
-              <Link to={`/?random=${a}`} className="hvr-underline-from-center">
-                <Home />
-                首页
+    <StaticQuery
+      query={graphql`
+      query SearchIndexQuery {
+        siteSearchIndex {
+          index
+        }
+      }
+    `}
+      render={data => (
+        <header
+          className='header'
+          style={location.pathname === rootPath ? class1 : class2}
+        >
+          <Progress scrollw={scrollw} />
+          <div className='site-branding'>
+            <Link to={`/?random=${a}`}>
+              <ruby>
+                <span className="logo">SaoBear</span>
+                <span>'is Blog</span>
+              </ruby>
+            </Link>
+          </div>
+          <div className={`lower`}>
+            <nav className={`${location.pathname === rootPath ? (headerhide ? 'fadeInRight animated ' : 'animated') : ''}`}>
+              <ul className={`${location.pathname === rootPath ? linkstyle : ''}`}>
+                <li>
+                  <Link to={`/?random=${a}`} className="hvr-underline-from-center">
+                    <Home />
+                    首页
               </Link>
-            </li>
-            <li>
-              <Link to={`/Timeline?random=${a}`} className="hvr-underline-from-center">
-                <Archive />
-                归档
+                </li>
+                <li>
+                  <Link to={`/Timeline?random=${a}`} className="hvr-underline-from-center">
+                    <Archive />
+                    归档
                 </Link>
-            </li>
-            <li>
-              <Link to={`/Labellist?random=${a}`} className="hvr-underline-from-center">
-                <Label />
-                标签
+                </li>
+                <li>
+                  <Link to={`/Labellist?random=${a}`} className="hvr-underline-from-center">
+                    <Label />
+                    标签
                 </Link>
-            </li>
-            <li>
-              <Link to="/" className="hvr-underline-from-center">
-                <Message />
-                留言
+                </li>
+                <li>
+                  <Link to="/" className="hvr-underline-from-center">
+                    <Message />
+                    留言
                 </Link>
-            </li>
-            <li>
-              <Link to="/" className="hvr-underline-from-center">
-                <About />
-                关于
+                </li>
+                <li>
+                  <Link to="/" className="hvr-underline-from-center">
+                    <About />
+                    关于
                 </Link>
-            </li>
-          </ul>
-        </nav>
-      </div>
-    </header>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </header>
+      )}
+    />
   );
 }
 

@@ -8,6 +8,7 @@
     "url": "https://github.com/gatsbyjs/gatsby/issues"
   },
   "dependencies": {
+    "@gatsby-contrib/gatsby-plugin-elasticlunr-search": "^2.3.0",
     "animate.css": "^3.7.2",
     "antd": "^3.23.3",
     "babel-plugin-import": "^1.12.1",

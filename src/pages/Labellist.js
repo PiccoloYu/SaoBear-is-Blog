@@ -1,37 +1,46 @@
 import React, { Component } from 'react';
 import { graphql, Link } from "gatsby"
-import DealWithData from "../utils/DealWithData";
+//import DealWithData from "../utils/DealWithData";
 
 class Label extends Component {
   render() {
     const { data } = this.props;
     const posts = data.allMarkdownRemark.edges;
-    let Labellist = []
-    for (let i = 0; i < posts.length; i++) {
-      let item = {
-        label: posts[i].node.frontmatter.tag,
-        title: posts[i].node.frontmatter.title
-      }
-      Labellist.push(item)
-    }
-    let sum = DealWithData(Labellist, 'label');
+    const mapping = {};
+
+    posts.forEach(({ node }) => {
+      const { tag } = node.frontmatter
+      tag.forEach((name) => {
+        if (mapping[name]) {
+          mapping[name] += 1;
+        } else {
+          mapping[name] = 1;
+        }
+      })
+    })
+
+
+    const tag = Array.from(Object.keys(mapping)).sort(
+      (b, a) => mapping[a] - mapping[b]
+    );//数量按顺序排序
+
 
     return (
       <div className="tag">
         <div className="tag-header">
-          目前共计 {sum.length} 个标签
+          目前共计 {tag.length} 个标签
         </div>
         <div className="tag-main">
-          {sum.map((node) => {
-            let test = node.allData.length > 2;
+          {tag.map((node) => {
+            let test = mapping[node] > 2;
             return (
-              <Link className="animated slideInDown" to={`Label/${node.label}`} key={node.label}
+              <Link className="animated slideInDown" to={`Label/${node}`} key={node}
                 style={{
                   color: `${test ? 'rgba(0,0,0,1)' : 'rgba(0,0,0,.7)'}`,
                   fontSize: `${test ? '20px' : '15px'}`,
                 }}
               >
-                {node.label}   {node.allData.length}
+                {node}   {mapping[node]}
               </Link>
             )
           })}
@@ -41,7 +50,7 @@ class Label extends Component {
   }
 }
 
-export default  Label;
+export default Label;
 
 export const tagQuery = graphql`
   query labelPageQuery {

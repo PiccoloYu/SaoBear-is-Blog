@@ -49,9 +49,8 @@ exports.createPages = ({ graphql, actions }) => {
 
       const { tag } = post.node.frontmatter;
 
-      // 讀取標籤
       if (tag) {
-        tagSet.add(tag)
+        tag.forEach(item => tagSet.add(item));
       }
 
       createPage({

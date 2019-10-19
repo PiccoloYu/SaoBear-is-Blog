@@ -1,7 +1,9 @@
 ---
+path: "react-admin"
 title: "react-admin"
 date: "2019-05-19 19:19:03.284Z"
-tag: "react"
+tag:
+  - react
 ---
 
 ### react-admin([尝试一下在线编辑](https://codesandbox.io/s/react-admin-u9kdb))

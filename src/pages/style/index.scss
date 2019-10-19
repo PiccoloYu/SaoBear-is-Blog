@@ -123,12 +123,26 @@ html::-webkit-scrollbar-track {
 
     .content-wrap {
 
+      .content-wrap-img {
+        float: right;
+        width: 100%;
+        height: 50px;
+        img{
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          pointer-events: none;
+          transition: all .6s;
+        }
+      }
+
       .content-wrap-main {
         padding: 15px;
         width: 100%;
         height: 100%;
+        float: left;
 
-        &>section {
+        &>header {
           &>h4 {
             color: #337ab7;
             font-size: 1.5rem;
@@ -154,6 +168,7 @@ html::-webkit-scrollbar-track {
         }
 
         &>footer {
+          padding-top: 10px;
           text-align: left;
           font-family: '幼圆';
 

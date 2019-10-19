@@ -56,6 +56,7 @@ class Timeline extends Component {
       datelist.push(item);
     }
     let sum = DealWithData(datelist, 'year');
+
     return (
       <div>
         {
@@ -70,7 +71,7 @@ class Timeline extends Component {
                   {node.allData.map((item) => {
                     return (
                       <VerticalTimelineElement
-                        key={item.date}
+                        key={item.title}
                         className="vertical-timeline-element--education"
                         contentStyle={{ background: 'rgba(250, 250, 250, 1)', color: '#000', borderTop: "3px solid orange" }}
                         contentArrowStyle={{ borderRight: '7px solid  rgb(255, 255, 255)' }}
