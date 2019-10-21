@@ -5,8 +5,10 @@ import React from "react"
 import { Link, graphql } from "gatsby"
 //import { Icon } from 'antd';
 import MyTag from "../components/Tag/";
-import SEO from "../components/seo"
-import { rhythm, scale } from "../utils/typography"
+import SEO from "../components/seo";
+import { rhythm, scale } from "../utils/typography";
+import Comment from "../components/Comment";
+
 
 const BlogLinktext = ({ text, color }) => (
   <div className="Page-main"
@@ -95,6 +97,7 @@ class BlogPostTemplate extends React.Component {
             )}
           </div>
         </nav>
+        <Comment />
       </div>
     )
   }
