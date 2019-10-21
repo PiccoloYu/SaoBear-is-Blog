@@ -23,15 +23,15 @@ class Main extends Component {
             >
                 <div className="children">
                     <Row>
-                        <Col span={24}>
+                        <Col xs={24} sm={24} md={24} lg={24} xl={24}>
                             {test ? <Game /> : ''}
                         </Col>
-                        <Col span={18}>
+                        <Col xs={24} sm={24} md={24} lg={18} xl={18}>
                             <Transition location={location}>
                                 {children}
                             </Transition>
                         </Col>
-                        <Col span={6}>
+                        <Col xs={24} sm={24} md={24} lg={6} xl={6}>
                             <Anchor pathname={location.pathname} />
                         </Col>
                     </Row>

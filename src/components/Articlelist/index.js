@@ -40,13 +40,13 @@ let Articlelist = ({ obj }) => {
                       <section className="article_section">
                         <MyTag label={node.frontmatter.tag} date={`发布于 ` + node.frontmatter.date} className='mytag' />
                       </section>
-                      <footer>
+                      <div className="articlefooter">
                         <p
                           dangerouslySetInnerHTML={{
                             __html: node.frontmatter.description || node.excerpt,
                           }}
                         />
-                      </footer>
+                      </div>
                       {/*<div className="more">
                     <Link
                       style={{ boxShadow: `none` }} to={node.fields.slug}>
