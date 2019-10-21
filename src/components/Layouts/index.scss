@@ -1,7 +1,7 @@
 html,
 body {
-  height: 100% !important;
-  width:100% !important;
+  height: 100% ;
+  width:100% ;
 }
 
 .layout {
@@ -96,7 +96,7 @@ body {
   //margin-top: 2%;
   margin-bottom: 1.875rem;
   //background-image: url(/imgs/demo4.jpg);
-  position: relative;
+  position: absolute;
   //top: 100vh!important;
   left: 0;
   right: 0;
@@ -131,9 +131,9 @@ body {
   #section {
     padding: 20px 10px !important;
   }
-  .lower{
+  /*.lower{
     display: none !important;
-  }
+  }*/
   .Anchor_top {
     padding-top: 15px !important;
   }
@@ -150,9 +150,9 @@ body {
   #section {
     padding: 20px 10px !important;
   }
-  .lower{
+  /*.lower{
     display: none !important;
-  }
+  }*/
 }
 
 .main_sreen {

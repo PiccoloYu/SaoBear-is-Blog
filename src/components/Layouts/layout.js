@@ -133,7 +133,7 @@ class Layout extends React.Component {
               {test ? <Focusinfo screenTop={screenTop} test={test} /> : ''}
               {<ScreenMain test={test} location={location} title={title} url={lost[1]} />}
               <Main test={test} url={lost[1]} location={location} children={children} />
-              {/*<Backtop scrollTop={scrollTop} />*/}
+              {<Backtop scrollTop={scrollTop} />}
               <Footer />
             </div>
           </ContextProviderComponent>
