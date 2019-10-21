@@ -79,7 +79,7 @@ function Header({ headerhide, location, scrollw }) {
                 </Link>
                 </li>
                 <li>
-                  <Link to="/" className="hvr-underline-from-center">
+                  <Link to="/Article/About/" className="hvr-underline-from-center">
                     <About />
                     关于
                 </Link>
