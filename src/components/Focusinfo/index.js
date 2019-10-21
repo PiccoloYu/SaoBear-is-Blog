@@ -58,7 +58,7 @@ class Focusinfo extends React.Component {
     return (
       <div className={`focusinfo animated slideInRight `}>
         <div className="header-info">
-          <p>Keep trying no matter how hard it seems. it will get easier.</p>
+          <p>测试</p>
           <div className="control">
             <Row>
               <Col span={8}>
