@@ -27,7 +27,6 @@ function Header({ headerhide, location, scrollw }) {
 
   const a = Math.random();
 
-
   return (
     <StaticQuery
       query={graphql`
