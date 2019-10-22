@@ -9,12 +9,45 @@ import './index.scss';
 
 
 class Aplayer extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      test: true
+    };
+    this.bindaplyer = this.bindaplyer.bind(this);
+  }
+
+  componentDidMount() {
+    let miniswitcher = document.querySelector('.aplayer-miniswitcher');
+    let aplayerbody = document.querySelector('.aplayer-body');
+    aplayerbody.classList.add('aplayer-body-hover');
+    miniswitcher.addEventListener('click', this.bindaplyer)
+  }
+
+  bindaplyer() {
+    const { test } = this.state;
+    let aplayerbody = document.querySelector('.aplayer-body');
+    if (test) {
+      aplayerbody.style.left = 0;
+      aplayerbody.classList.remove('aplayer-body-hover');
+      this.setState({
+        test: false
+      })
+    } else {
+      aplayerbody.style.left = '-4.125rem';
+      aplayerbody.classList.add('aplayer-body-hover');
+      this.setState({
+        test: true
+      })
+    }
+  }
+
 
   // event binding example
   onPlay = () => {
     let screen = document.querySelector('#Screen');
     let botStatus = document.querySelector('#botStatus');
-    if(botStatus !== null){
+    if (botStatus !== null) {
       botStatus.click();
       botStatus.checked = true;
     }
@@ -70,6 +103,9 @@ class Aplayer extends Component {
     console.log('destroy')
   }
 
+  test = () => {
+    console.log('TEST')
+  }
   renderReactLogo = () => {
     return (
       <img
@@ -107,6 +143,7 @@ class Aplayer extends Component {
           onPause={this.onPause}
           onListshow={this.listshow}
           onLrcshow={this.lrcshow}
+          onDestroy={this.test}
         />}
       </div>
     );

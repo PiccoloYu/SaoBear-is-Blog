@@ -53,6 +53,7 @@ class Layout extends React.Component {
     window.addEventListener('scroll', this.bindScroll);
   }
 
+
   componentWillUnmount() {
     // 移除滚动监听
     window.removeEventListener('scroll', this.bindScroll);

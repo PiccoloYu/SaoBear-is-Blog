@@ -7,9 +7,8 @@
     .aplayer-body {
       bottom: 1.9rem !important;
 
-      .aplayer-info {}
+      left: -4.125rem;
 
-      //left: -4.125rem;
       .aplayer-pic {
         border-radius: 50px;
 
@@ -18,8 +17,8 @@
       }
     }
 
-    .aplayer-body:hover {
-      left: 0;
+    .aplayer-body-hover:hover {
+      left: 0 !important;
     }
   }
 }
@@ -54,9 +53,11 @@
 
 .aplayer {
   &.aplayer-fixed {
-    z-index:999;
+    z-index: 999;
+
     .aplayer-lrc {
       bottom: 30px !important;
+
       .aplayer-lrc-contents {
         p {
           font-size: 22px;
