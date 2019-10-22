@@ -46,7 +46,7 @@ class BlogIndex extends React.Component {
     for (let i = 0; i < article.length; i++) {
       let clientRect = article[i].getBoundingClientRect();
       if (clientRect.bottom > 0 && clientRect.top <= window.innerHeight) {
-        article[i].classList.add('fadeInRightBig')
+        article[i].classList.add('fadeInUp')
       }
     }
   }

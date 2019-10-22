@@ -1,4 +1,4 @@
-var app_version = 'v20191018000002'
+var app_version = 'v20191018000003'
 
 function addQueryStringArg(url, name, value) {
   url += url.indexOf('?') === -1 ? '?' : '&'
