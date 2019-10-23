@@ -12,6 +12,10 @@ export default function HTML(props) {
           content="width=device-width, initial-scale=1, shrink-to-fit=no"
         />
         <link rel="stylesheet" href="./live2d/css/live2d.css" />
+        <link
+          rel="shortcut icon"
+          href="./favicons/Author192.png"
+        />
         {props.headComponents}
       </head>
       <body {...props.bodyAttributes}>

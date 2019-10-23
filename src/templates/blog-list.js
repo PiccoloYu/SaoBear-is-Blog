@@ -70,7 +70,7 @@ class BlogIndex extends React.Component {
           top: `${location.pathname === rootPath ? '0' : '-.9375rem'} `
         }}
       >
-        <SEO title="All posts" />
+        <SEO title="SaoBear's blog" />
         {/*<Bio />*/}
         <Articlelist obj={posts}/>
         <div className="goPage">

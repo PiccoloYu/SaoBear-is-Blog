@@ -36,8 +36,6 @@ class BlogPostTemplate extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      prevgo: '',
-      nextgo: '',
     };
   }
 
@@ -51,6 +49,8 @@ class BlogPostTemplate extends React.Component {
       <div className={`blog-post animated fadeInUp`}>
         <SEO
           title={post.frontmatter.title}
+          siteTitleAlt="SaoBear's Blog"
+          isPost={false}
           description={post.frontmatter.description || post.excerpt}
         />
         <article id="essay">
