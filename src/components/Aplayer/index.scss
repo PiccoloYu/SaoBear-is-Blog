@@ -8,11 +8,20 @@
 
       bottom: 1.9rem !important;
       left: -4.125rem;
+
       .aplayer-pic {
         border-radius: 50px;
 
 
       }
+    }
+
+    .aplayer-body-none {
+      left: -4.125rem !important;
+    }
+
+    .aplayer-body-show {
+      left: 0 !important;
     }
 
     .aplayer-body-hover:hover {
@@ -21,13 +30,7 @@
   }
 }
 
-.aplayer-body-none {
-  left: -4.125rem !important;
-}
 
-.aplayer-body-show {
-  left: 0 !important;
-}
 
 @keyframes animal {
   0% {
