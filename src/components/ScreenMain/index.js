@@ -18,7 +18,7 @@ const ScreenMain = ({ test, location, title, url }) => {
           <div className="imgDiv animated slideInDown"
             title={title}
           >
-            <img src='/imgs/AK-04.jpg' alt="title"></img>
+            <img src='/imgs/bg.jpg' alt="title"></img>
           </div> : ''
       }
     </div>
