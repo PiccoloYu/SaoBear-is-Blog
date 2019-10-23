@@ -28,13 +28,15 @@ class Aplayer extends Component {
     const { test } = this.state;
     let aplayerbody = document.querySelector('.aplayer-body');
     if (test) {
-      aplayerbody.style.left = '0';
+      aplayerbody.classList.remove('aplayer-body-none');
+      aplayerbody.classList.add('aplayer-body-show');
       aplayerbody.classList.remove('aplayer-body-hover');
       this.setState({
         test: false
       })
     } else {
-      aplayerbody.style.left = '-4.125rem';
+      aplayerbody.classList.remove('aplayer-body-show');
+      aplayerbody.classList.add('aplayer-body-none');
       aplayerbody.classList.add('aplayer-body-hover');
       this.setState({
         test: true
