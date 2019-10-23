@@ -28,7 +28,7 @@ class Aplayer extends Component {
     const { test } = this.state;
     let aplayerbody = document.querySelector('.aplayer-body');
     if (test) {
-      aplayerbody.style.left = 0;
+      aplayerbody.style.left = '0';
       aplayerbody.classList.remove('aplayer-body-hover');
       this.setState({
         test: false
