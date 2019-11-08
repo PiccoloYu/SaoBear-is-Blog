@@ -2,7 +2,8 @@
 path: 'build-a-modern-website-using-gatsbyJS '
 date: 2019-11-02T10:27:12.106Z
 tag:
-  - '[Gatsbyjs，react]'
+  - Gatsbyjs
+  - react
 title: Gatsbyjs react 创建博客（一）
 description: Gatsbyjs react 创建博客（一）
 ---
