@@ -52,7 +52,7 @@ GatsbyJS 拥有的丰富插件让开发者可以无痛地安装，移除插件�
 
  插件以 gatsby-plugin- 开头：
 
-|  插件   | 插件  |
+|  插件   | 用处 |
 |  ----  | ----  |
 |  feed  | 制作 RSS Feed  |
 |  manifest  | 应用程序缓存  |
