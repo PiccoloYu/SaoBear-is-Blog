@@ -13,7 +13,7 @@ collections:
     fields:
       - { name: path, label: Path }
       - { name: date, label: Date, widget: date }
-      - { name: tag, label: Tag , widget: list}
+      - { name: tag, label: Tag , widget: list, allow_add: true}
       - { name: title, label: Title }
       - { name: description, label: Description }
       - { name: body, label: Body, widget: markdown }
