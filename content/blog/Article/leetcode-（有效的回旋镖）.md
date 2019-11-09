@@ -3,6 +3,8 @@ path: leetcode_isBoomerang
 date: 2019-11-09T07:28:48.239Z
 tag:
   - leetcode
+  - js
+  - algorithm
 title: leetcode （1037.有效的回旋镖）
 description: 1037. 有效的回旋镖
 ---
