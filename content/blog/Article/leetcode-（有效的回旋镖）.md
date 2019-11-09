@@ -3,8 +3,8 @@ path: leetcode_isBoomerang
 date: 2019-11-09T07:28:48.239Z
 tag:
   - leetcode
-title: leetcode （有效的回旋镖）
-description: 有效的回旋镖
+title: leetcode （1037.有效的回旋镖）
+description: 1037. 有效的回旋镖
 ---
 回旋镖定义为一组三个点，这些点各不相同且不在一条直线上。
 
