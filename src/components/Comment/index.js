@@ -14,7 +14,7 @@ class Comment extends Component {
       clientSecret: '848534155ec3e9f5775ca97f537b3ecfa6dc5dcd',
       repo: 'Blog-Comment',
       owner: 'PiccoloYu',
-      admin: ['PiccoloYu'],
+      admin: 'PiccoloYu',
       id: window.location.pathname,      // Ensure uniqueness and length less than 50
       distractionFreeMode: true, // Facebook-like distraction free mode
       createIssueManually: false
