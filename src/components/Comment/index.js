@@ -1,13 +1,9 @@
 import React, { Component } from 'react';
 import 'gitalk/dist/gitalk.css'
 import Gitalk from 'gitalk'
-
-
-
-
+import md5 from 'md5';
 
 class Comment extends Component {
-
   componentDidMount() {
     const gitalk = new Gitalk({
       clientID: 'd06130056fa27590d47e',
@@ -15,7 +11,7 @@ class Comment extends Component {
       repo: 'Blog-Comment',
       owner: 'PiccoloYu',
       admin: 'PiccoloYu',
-      id: window.location.pathname,      // Ensure uniqueness and length less than 50
+      id: md5(window.location.pathname),      // Ensure uniqueness and length less than 50
       distractionFreeMode: true, // Facebook-like distraction free mode
       createIssueManually: false
     })
