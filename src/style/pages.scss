@@ -266,6 +266,8 @@ html::-webkit-scrollbar-track {
 
 .page_main {
   padding: .9375rem;
+  display: flex;
+  justify-content : space-between;
 }
 
 .page {
