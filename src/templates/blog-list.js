@@ -3,7 +3,6 @@ import { graphql, Link } from "gatsby"
 import SEO from "../components/seo";
 import Articlelist from "../components/Articlelist";
 //import MyCanvas from "../components/Canvas/index";
-import "../pages/style/index.scss";
 
 
 const NavLinkText = ({ color, text }) => (

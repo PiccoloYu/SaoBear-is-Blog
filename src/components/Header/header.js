@@ -4,7 +4,6 @@ import { Home, Archive, Message, About, Label, Menu } from "../../utils/Svgicons
 //import { Link } from 'react-router-dom';
 import { Link, StaticQuery, graphql } from "gatsby";
 import Progress from "../Progress";
-import './index.scss'
 
 //const { SubMenu } = Menu;
 //const { Search } = Input;

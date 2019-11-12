@@ -3,10 +3,6 @@ import ReactAplayer from 'react-aplayer';
 import { connect } from "react-redux";
 import { isPower } from "../../Redux/action";
 import appData from './data';
-import './index.scss';
-
-
-
 
 class Aplayer extends Component {
   constructor(props) {

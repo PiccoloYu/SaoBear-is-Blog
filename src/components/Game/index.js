@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from "react-redux";
 import { isPower } from "../../Redux/action";
-import './Game.scss'
 
 class Game extends Component {
   constructor(props) {

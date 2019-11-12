@@ -71,6 +71,7 @@ body {
       -ms-filter: blur(10px);
       filter: blur(10px);
       box-shadow: 1px 1px white, -1px -1px #444;
+      height: 100%;
     }
 
     h1 {
@@ -128,6 +129,15 @@ body {
 }
 
 @media only screen and (max-width: 768px) {
+  #essay {
+    header{
+      h1{
+        font-size: 20px;
+      }
+    }
+    margin: 0 !important;
+  }
+
   #section {
     padding: 20px 10px !important;
   }
@@ -589,5 +599,3 @@ body {
 .Comment {
   padding: 0 .9375rem;
 }
-
-

@@ -18,7 +18,11 @@ import Backtop from "../Backtop";
 
 import Loadable from 'react-loadable';//解决 wondos 未定义
 
-import "./index.scss";
+import '../../style/index.scss';
+import '../../style/Aplayer.scss';
+import '../../style/Game.scss';
+import '../../style/Header.scss'
+import '../../style/pages.scss'
 import 'antd/dist/antd.css';
 import 'prismjs/themes/prism-tomorrow.css';
 import 'animate.css';
