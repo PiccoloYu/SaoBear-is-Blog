@@ -35,7 +35,7 @@ flowerbed = [1,0,0,0,1], n = 2
 n 是非负整数，且不会超过输入数组的大小。
 
 
-## 题解
+## 题解：
 ```	
 let canPlaceFlowers = function (flowerbed = [], n) {
 		if (flowerbed.length < n) {
