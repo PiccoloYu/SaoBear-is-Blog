@@ -4,7 +4,6 @@ import SEO from "../components/seo";
 import Articlelist from "../components/Articlelist";
 //import MyCanvas from "../components/Canvas/index";
 
-
 const NavLinkText = ({ color, text }) => (
   <div className="Page-main"
     style={{
@@ -26,7 +25,6 @@ const NavLink = ({ test, url, text }) => {
     </Link>
   );
 }
-
 
 class BlogIndex extends React.Component {
 

@@ -68,13 +68,12 @@
   }
 
   .lower {
-    margin: 10px 0 0 10px;
+    margin: 10px 0 0 -160px;
     font-size: 16px;
     position: relative;
     pointer-events: auto !important;
     text-align: center;
     flex-direction: row-reverse !important;
-
     &>nav {
       display: block !important;
       position: relative;
@@ -241,4 +240,11 @@
   height: 75px;
   padding-top: 25px;
   vertical-align: middle;
+}
+
+.GithubCorner{
+  &>svg{
+    height: 3.75rem;
+    width: 3.75rem;
+  }
 }

@@ -4,6 +4,7 @@ import { Home, Archive, Message, About, Label, Menu } from "../../utils/Svgicons
 //import { Link } from 'react-router-dom';
 import { Link, StaticQuery, graphql } from "gatsby";
 import Progress from "../Progress";
+import GithubCorner from 'react-github-corner';
 
 //const { SubMenu } = Menu;
 //const { Search } = Input;
@@ -23,14 +24,11 @@ function Header({ headerhide, location, scrollw }) {
 
   let linkstyle = headerhide ? 'linkstyleh' : 'linkstylen';
 
-
   const a = Math.random();
-
 
   let lowershow = () => {
     setNavshow(!navshow)
   }
-
 
   return (
     <StaticQuery
@@ -94,6 +92,7 @@ function Header({ headerhide, location, scrollw }) {
               </ul>
             </nav>
           </div>
+          <GithubCorner className="GithubCorner" href="https://github.com/PiccoloYu/SaoBear-is-Blog" />
         </header>
       )}
     />

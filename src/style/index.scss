@@ -153,6 +153,9 @@ body {
   .header-info {
     width: 90% !important;
   }
+  .GithubCorner{
+    display:none;
+  }
 }
 
 @media (min-width: 768px) {
@@ -160,7 +163,6 @@ body {
     display: flex !important;
     flex-direction: row-reverse !important;
   }
-
   .Menubut {
     display: none;
   }
