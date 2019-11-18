@@ -49,7 +49,7 @@ function Header({ headerhide, location, scrollw }) {
             <Link to={`/?random=${a}`}>
               <ruby>
                 <span className="logo">SaoBear</span>
-                <span>'is Blog</span>
+                <span>'s Blog</span>
               </ruby>
             </Link>
           </div>
