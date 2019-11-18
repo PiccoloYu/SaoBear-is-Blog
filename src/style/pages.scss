@@ -78,6 +78,7 @@ html::-webkit-scrollbar-track {
   margin-bottom: 2%;
   padding: .9375rem;
   padding-bottom: 0;
+  padding-left: 0;
   //height: 6.875rem;
   //box-shadow: 0 1px 20px -8px rgba(0, 0, 0, .5);
   width: 100%;
@@ -267,7 +268,7 @@ html::-webkit-scrollbar-track {
 .page_main {
   padding: .9375rem;
   display: flex;
-  justify-content : space-between;
+  justify-content: space-between;
 }
 
 .page {

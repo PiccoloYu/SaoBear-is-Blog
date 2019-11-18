@@ -130,11 +130,12 @@ body {
 
 @media only screen and (max-width: 768px) {
   #essay {
-    header{
-      h1{
+    header {
+      h1 {
         font-size: 20px;
       }
     }
+
     margin: 0 !important;
   }
 
@@ -153,8 +154,11 @@ body {
   .header-info {
     width: 90% !important;
   }
-  .GithubCorner{
-    display:none;
+}
+
+@media only screen and (max-width: 600px) {
+  .GithubCorner {
+    display: none;
   }
 }
 
@@ -164,20 +168,11 @@ body {
     margin: 10px 0 0 10px;
     flex-direction: row-reverse !important;
   }
-  .Menubut {
+
+
+  .Menubut_main {
     display: none;
   }
-}
-
-.Menubut {
-  border: 0;
-  padding: .25rem .75rem;
-  font-size: 1.25rem;
-  line-height: 1;
-  background: 0 0;
-  border: 1px solid transparent;
-  border-radius: .25rem;
-  margin-right: 10px;
 }
 
 
@@ -511,7 +506,7 @@ body {
   }
 
   #essay {
-    margin: 0 .9375rem;
+    margin-right: .9375rem;
     background: #fff; //rgba(252, 250, 242, 1)
     border-radius: 3px;
     box-shadow: 0 1px 2px 0 rgba(0, 0, 0, .05);

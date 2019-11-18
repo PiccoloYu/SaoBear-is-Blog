@@ -31,7 +31,7 @@ class Main extends Component {
                                 {children}
                             </Transition>
                         </Col>
-                        <Col xs={24} sm={24} md={24} lg={24} xl={6}>
+                        <Col xs={24} sm={24} md={24} lg={6} xl={6}>
                             <Anchor pathname={location.pathname} />
                         </Col>
                     </Row>

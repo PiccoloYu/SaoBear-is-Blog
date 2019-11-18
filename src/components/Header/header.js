@@ -53,47 +53,51 @@ function Header({ headerhide, location, scrollw }) {
               </ruby>
             </Link>
           </div>
-          <button className="Menubut" onClick={lowershow}>
-            <Menu />
-          </button>
-          <div className={`lower ${navshow ? 'lowers' : 'lowerh'}`}>
-            <nav className={`${location.pathname === rootPath ? (headerhide ? 'fadeInRight animated ' : 'animated') : ''}`}>
-              <ul className={`${location.pathname === rootPath ? linkstyle : ''} ${navshow ? 'Linkbutw' : ''}`}>
-                <li className="Linkbut">
-                  <Link to={`/?random=${a}`} className="hvr-underline-from-center ">
-                    <Home />
-                    首页
-              </Link>
-                </li>
-                <li className="Linkbut">
-                  <Link to={`/Timeline?random=${a}`} className="hvr-underline-from-center">
-                    <Archive />
-                    归档
-                </Link>
-                </li>
-                <li className="Linkbut">
-                  <Link to={`/Labellist?random=${a}`} className="hvr-underline-from-center">
-                    <Label />
-                    标签
-                </Link>
-                </li>
-                <li className="Linkbut">
-                  <Link to="/Comment" className="hvr-underline-from-center">
-                    <Message />
-                    留言薄
-                </Link>
-                </li>
-                <li className="Linkbut">
-                  <Link to="/Article/About/" className="hvr-underline-from-center">
-                    <About />
-                    关于
-                </Link>
-                </li>
-              </ul>
-            </nav>
+          <div className="Menubut_main">
+            <button className="Menubut" onClick={lowershow}>
+              <Menu />
+            </button>
           </div>
-          <GithubCorner className="GithubCorner" href="https://github.com/PiccoloYu/SaoBear-is-Blog" />
-        </header>
+          <div>
+            <div className={`lower ${navshow ? 'lowers' : 'lowerh'}`}>
+              <nav className={`${location.pathname === rootPath ? (headerhide ? 'fadeInRight animated ' : 'animated') : ''}`}>
+                <ul className={`${location.pathname === rootPath ? linkstyle : ''} ${navshow ? 'Linkbutw' : ''}`}>
+                  <li className="Linkbut">
+                    <Link to={`/?random=${a}`} className="hvr-underline-from-center ">
+                      <Home />
+                      首页
+              </Link>
+                  </li>
+                  <li className="Linkbut">
+                    <Link to={`/Timeline?random=${a}`} className="hvr-underline-from-center">
+                      <Archive />
+                      归档
+                </Link>
+                  </li>
+                  <li className="Linkbut">
+                    <Link to={`/Labellist?random=${a}`} className="hvr-underline-from-center">
+                      <Label />
+                      标签
+                </Link>
+                  </li>
+                  <li className="Linkbut">
+                    <Link to="/Comment" className="hvr-underline-from-center">
+                      <Message />
+                      留言薄
+                </Link>
+                  </li>
+                  <li className="Linkbut">
+                    <Link to="/Article/About/" className="hvr-underline-from-center">
+                      <About />
+                      关于
+                </Link>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <GithubCorner className="GithubCorner" href="https://github.com/PiccoloYu/SaoBear-is-Blog" />
+          </div>
+        </ header>
       )}
     />
   );

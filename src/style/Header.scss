@@ -31,7 +31,7 @@
     padding-bottom: .3125rem;
     font-size: 1.25rem;
     white-space: nowrap;
-    padding-left: 26px;
+    padding-left: 10px;
     cursor: pointer;
 
     a {
@@ -68,12 +68,13 @@
   }
 
   .lower {
-    margin: 10px 0 0 -160px;
+    margin: 10px 60px 0 10px;
     font-size: 16px;
     position: relative;
     pointer-events: auto !important;
     text-align: center;
     flex-direction: row-reverse !important;
+
     &>nav {
       display: block !important;
       position: relative;
@@ -242,9 +243,27 @@
   vertical-align: middle;
 }
 
-.GithubCorner{
-  &>svg{
+.GithubCorner {
+  &>svg {
     height: 3.75rem;
     width: 3.75rem;
   }
+}
+
+.Menubut_main {
+  width: 50%;
+  height: 60px
+}
+
+.Menubut {
+  position: absolute;
+  border: 0;
+
+  font-size: 1.25rem;
+  line-height: 60px;
+  background: 0 0;
+  border: 1px solid transparent;
+  border-radius: .25rem;
+  margin-right: 10px;
+  right: 0;
 }
