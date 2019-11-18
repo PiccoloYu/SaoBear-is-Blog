@@ -597,3 +597,13 @@ body {
 .Comment {
   padding: 0 .9375rem;
 }
+
+.github_link {
+  box-shadow: unset;
+
+  &>i {
+    font-size: 25px;
+    color: orange;
+  }
+
+}

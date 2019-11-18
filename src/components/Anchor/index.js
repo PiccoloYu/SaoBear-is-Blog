@@ -1,6 +1,6 @@
 import React from 'react';
 import { StaticQuery, graphql, Link } from "gatsby";
-
+import { Github } from "../../utils/Svgicons";
 import { Affix } from 'antd';
 
 let Anchor = ({ pathname }) => {
@@ -39,6 +39,10 @@ let Anchor = ({ pathname }) => {
                 <img src="/imgs/Author.jpg" alt="Author" className="hvr-bounce-in Author" />
                 <h4>Saobear</h4>
                 <div className="Catalog">
+                  <hr />
+                  <a href="https://github.com/PiccoloYu/SaoBear-is-Blog" className="github_link" target="_black">
+                    <Github />
+                  </a>
                   <hr />
                   <p>共{posts.length}篇文章</p>
                   <hr />
