@@ -18,7 +18,9 @@ description: 1037. 有效的回旋镖
 
 输入：
 
-```[[1,1],[2,3],[3,2]]```
+```javascript
+[[1,1],[2,3],[3,2]]
+```
 
 输出：true
 
@@ -26,14 +28,16 @@ description: 1037. 有效的回旋镖
 
 输入：
 
-```[[1,1],[2,2],[3,3]]```
+```javascript
+[[1,1],[2,2],[3,3]]
+```
 
 输出：false
  
 
 ###提示：
 
-```
+```javascript
 points.length == 3
 points[i].length == 2
 0 <= points[i][j] <= 100
@@ -45,7 +49,7 @@ points[i].length == 2
 
  因式分解
 
-```
+```javascript
 let isBoomerang = function (points) {
 		let [a, b, c] = points;
 		return (a[0] * (b[1] - c[1]) + b[0] * (c[1] - a[1]) + c[0] * (a[1] - b[1])) != 0;
