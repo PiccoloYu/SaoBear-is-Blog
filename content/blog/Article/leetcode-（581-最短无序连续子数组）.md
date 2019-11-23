@@ -15,11 +15,11 @@ description: 581. 最短无序连续子数组
 ### 示例 1:
 
 输入: 
-```
+```javascript
 [2, 6, 4, 8, 10, 9, 15]
 ```
 输出:
-```
+```javascript
  5
 ```
 ### 解释: 
@@ -37,7 +37,7 @@ description: 581. 最短无序连续子数组
 
 他们的差值便是 该最小数组的长度。
 
-```
+```javascript
     let findUnsortedSubarray = function (nums = []) {
       let max = 0;
       let min = 0;
