@@ -13,18 +13,18 @@ description: 643.子数组最大平均数 I
 ### 示例 1:
 
 输入:
-``` 
+```javascript
 [1,12,-5,-6,50,3], k = 4
 ```
 输出: 
-```
+```javascript
 12.75
 ```
 
 解释:
 
 最大平均数 
-```
+```javascript
 (12-5-6+50)/4 = 51/4 = 12.75
 ```
 
@@ -34,7 +34,7 @@ description: 643.子数组最大平均数 I
 所给数据范围 [-10,000，10,000]。
 
 ## 题解：
-```
+```javascript
 /**
  * @param {number[]} nums
  * @param {number} k
