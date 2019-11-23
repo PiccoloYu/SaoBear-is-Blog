@@ -15,7 +15,7 @@ description: 605. 种花问题
 ### 示例 1:
 
 输入: 
-```
+```javascript
 flowerbed = [1,0,0,0,1], n = 1
 ```
 输出: True
@@ -23,7 +23,7 @@ flowerbed = [1,0,0,0,1], n = 1
 ### 示例 2:
 
 输入: 
-```
+```javascript
 flowerbed = [1,0,0,0,1], n = 2
 ```
 输出: False
@@ -36,7 +36,7 @@ n 是非负整数，且不会超过输入数组的大小。
 
 
 ## 题解：
-```	
+```javascript	
 let canPlaceFlowers = function (flowerbed = [], n) {
 		if (flowerbed.length < n) {
 			return alert('超出了数组的长度');
