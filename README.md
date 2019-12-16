@@ -1,6 +1,6 @@
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
-<h1 align="center">
-  Saobear's blog
+<h1>
+  Gatsbyjs - Saobear's Blog
 </h1>
 
 >基于Gatsbyjs和react的个人博客页面
@@ -12,8 +12,6 @@ _Have another more specific idea? You may want to check out our vibrant collecti
 
 ## 🧐 What's inside?
 
-
-    .
     ├── node_modules
     ├── src
     ├── .gitignore
