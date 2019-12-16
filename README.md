@@ -3,6 +3,10 @@
   Gatsbyjs - Saobear's Blog
 </h1>
 
+![Home Page](https://saobear.xyz/Exhibition/one.png)
+
+![Home Page](https://saobear.xyz/Exhibition/two.png)
+
 >基于Gatsbyjs和react的个人博客页面
 
 _Have another more specific idea? You may want to check out our vibrant collection of [official and community-created starters](https://www.gatsbyjs.org/docs/gatsby-starters/)._
