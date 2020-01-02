@@ -12,7 +12,7 @@ class Comment extends Component {
       owner: 'PiccoloYu',
       admin: 'PiccoloYu',
       id: md5(window.location.pathname),      // Ensure uniqueness and length less than 50
-      distractionFreeMode: true, // Facebook-like distraction free mode
+      distractionFreeMode: false, // Facebook-like distraction free mode
       createIssueManually: false
     })
     gitalk.render('gitalk-container')
